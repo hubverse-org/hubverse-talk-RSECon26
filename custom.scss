@@ -1,0 +1,61 @@
+/*-- scss:defaults --*/
+:root {
+  --hubverse-primary: #3b88bf;
+  --hubverse-secondary: #5b5b5b;
+}
+
+
+// Define variables at the top of your custom.scss
+$body-bg: white;
+$inverted-text-color: white;
+$inverted-text-color-faded: rgba(255, 255, 255, 0.8);
+$inverted-code-bg: rgba(0, 0, 0, 0.3);
+$inverted-callout-bg: rgba(255, 255, 255, 0.1);
+$font-family-monospace: 'Fira Code', monospace;
+$code-block-bg: darken($body-bg, 4%);
+
+
+/*-- scss:rules --*/
+
+// Import Poppins font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+
+
+// Heading colors
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  color: var(--hubverse-primary);
+}
+
+.reveal blockquote {
+  border-left: 4px solid var(--hubverse-primary);
+  padding-left: 1rem;
+  margin-left: 0;
+}
+
+.reveal a {
+  color: var(--hubverse-primary);
+}
+
+.inverse h1 {
+   color: $inverted-text-color;
+ }
+
+.reveal pre code {
+  border-radius: 0.5rem;
+}
+
+.reveal div.cell-output.cell-output-stdout pre code {
+  background-color: #fdf6ee !important;  // example light peach background
+  border-radius: 0.4rem;
+  margin-top: 0.5rem;
+  padding: 1em;
+  color: #333;
+}
+
+.reveal iframe {
+  border: 3px solid var(--hubverse-primary);          // Light gray border
+  border-radius: 6px;              // Rounded corners (optional)
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.15);  // Subtle shadow
+  margin: 1em 0;                   // Space around iframe
+}
