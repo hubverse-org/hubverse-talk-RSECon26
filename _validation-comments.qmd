@@ -1,0 +1,65 @@
+::: panel-tabset
+### Passed
+
+```{=html}
+<div class="hv-ghcomment">
+  <div class="hv-ghc-head">
+    <strong>github-actions</strong><span class="hv-ghc-badge">bot</span> commented
+  </div>
+  <div class="hv-ghc-body">
+    <div class="hv-ghc-title">Submission validation</div>
+    <div class="hv-ghc-verdict">✅ <strong>All validation checks passed.</strong></div>
+    <details class="hv-ghc-details">
+      <summary>Check results</summary>
+<pre class="hv-ghc-log"><span class="rule">── hub-config ────</span>
+<span class="ok">✔ [valid_config]</span>: All hub config files are valid.
+
+<span class="rule">── team1-goodmodel/2022-10-29-team1-goodmodel.csv ────</span>
+<span class="ok">✔ [file_name]</span>: File name is valid.
+<span class="ok">✔ [file_location]</span>: File directory name matches
+  `model_id` metadata in file name.
+<span class="ok">✔ [file_format]</span>: File is accepted hub format.
+<span class="ok">✔ [metadata_exists]</span>: Metadata file exists.
+<span class="ok">✔ [colnames]</span>: Column names are consistent with
+  expected round task IDs and std column names.
+<span class="ok">✔ [col_types]</span>: Column data types match hub schema.
+<span class="ok">✔ [req_vals]</span>: Required task ID/output type/output
+  type ID combinations all present.
+<span class="more">… 18 further checks</span></pre>
+    </details>
+  </div>
+</div>
+```
+
+### Failed
+
+```{=html}
+<div class="hv-ghcomment">
+  <div class="hv-ghc-head">
+    <strong>github-actions</strong><span class="hv-ghc-badge">bot</span> commented
+  </div>
+  <div class="hv-ghc-body">
+    <div class="hv-ghc-title">Submission validation</div>
+    <div class="hv-ghc-verdict">❌ <strong>Validation failed.</strong> The checks below did
+      not pass. Push a new commit to the pull request to re-run them.</div>
+<pre class="hv-ghc-log"><span class="rule">── hub-config ────</span>
+<span class="ok">✔ [valid_config]</span>: All hub config files are valid.
+
+<span class="rule">── team1-goodmodel/2022-10-22-team1-goodmodel.csv ────</span>
+<span class="ok">✔ [file_name]</span>: File name is valid.
+<span class="ok">✔ [metadata_exists]</span>: Metadata file exists.
+<span class="bad">✖ [submission_time]</span>: Submission time must be within
+  accepted submission window for round. Current time
+  "2026-08-12 18:55:10 UTC" is outside window
+  2022-10-16 EDT--2022-10-23 23:59:59 EDT.
+<span class="ok">✔ [colnames]</span>: Column names are consistent with
+  expected round task IDs and std column names.
+<span class="ok">✔ [req_vals]</span>: Required task ID/output type/output
+  type ID combinations all present.
+<span class="ok">✔ [value_col_non_desc]</span>: Quantile or cdf values
+  increase when ordered by `output_type_id`.
+<span class="more">… 21 further checks</span></pre>
+  </div>
+</div>
+```
+:::

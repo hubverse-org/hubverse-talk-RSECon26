@@ -17,7 +17,7 @@
 
   <meta name="author" content="Anna Krystalli">
   <meta name="author" content="Consortium of Infectious Disease Modeling Hubs">
-  <meta name="dcterms.date" content="2025-10-07">
+  <meta name="dcterms.date" content="2026-09-09">
   <title>The Hubverse: Streamlining Collaborative Infectious Disease Modeling</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -401,7 +401,7 @@
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">The Hubverse: Streamlining Collaborative Infectious Disease Modeling</h1>
   <div class="subtitle-line">
-    <p class="subtitle">US-RSE Conference 2025</p>
+    <p class="subtitle">RSECon26 · Sheffield</p>
   </div>
 
 <div class="quarto-title-authors">
@@ -425,11 +425,11 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 </div>
 </div>
 
-  <p class="date">7 October 2025</p>
+  <p class="date">9 September 2026</p>
 
   <img src="logo.png" class="title-img" style="width: 10%; height: auto;">
 
-<a href="https://r-rse.github.io/hubverse-talk-usrse25" class="slide-link">
+<a href="https://hubverse-org.github.io/hubverse-talk-RSECon26" class="slide-link">
   <i class="fa fa-presentation" aria-hidden="true"></i>
 </a>
 
@@ -440,9 +440,9 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <aside class="notes">
 <p>Hi everyone,</p>
 <p>My name is Anna Krystalli.</p>
-<p>I used to be an <strong>RSE at the University of Sheffield</strong> but a few years ago, I returned back home to Greece and <strong>set up my own RSE company.</strong></p>
+<p>I used to be an <strong>RSE at the University of Sheffield</strong>, so it’s lovely to be back, but a few years ago I returned home to Greece and <strong>set up my own RSE company</strong>.</p>
 <p>Today I’m going to talk to you about the <strong>hubverse</strong>, a project I’ve been involved in since 2023.</p>
-<p>And I’ll start with some <strong>motivating background on the project</strong></p>
+<p>And I’ll start with some <strong>motivating background on the project</strong>.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -455,15 +455,15 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
           display:block!important;
       }</style></aside>
 </section>
-<section id="the-problem" class="slide level2">
-<h2>❌ The problem</h2>
-<p><strong>Infectious disease modeling has scaled rapidly…</strong></p>
+<section id="where-we-started" class="slide level2">
+<h2>❌ Where we started</h2>
+<p><strong>Infectious disease modeling scaled rapidly through COVID-19…</strong></p>
 <ul>
-<li>But the landscape is fragmented:
+<li>…but by 2020 the landscape had become <strong>fragmented</strong>:
 <ul>
 <li>Inconsistent formats</li>
 <li>Redundant or conflicting forecasts</li>
-<li>Lack of coordination between modelers and stakeholders</li>
+<li>Little coordination between modelers and stakeholders</li>
 </ul></li>
 </ul>
 <blockquote>
@@ -472,15 +472,22 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0094130">Chretien et al., PLOS ONE, 2014</a></li>
 </ul>
 </blockquote>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Much <strong>less true today</strong>, which is rather the point of the rest of this talk.</p>
+</div>
+</div>
+</div>
 <aside class="notes">
-<p>Over the past two decades, and especially since the COVID-19 pandemic, <strong>infectious disease modeling has become a central tool in public health decision-making</strong>.</p>
-<p>We’ve seen an <strong>explosion of forecasting efforts</strong>.</p>
-<p>This growth is <strong>encouraging and reflects increased computational capacity</strong>, <strong>improved data availability</strong>, and <strong>global interest</strong> in predictive analytics for public health.</p>
-<p>However, it has also come with growing pains.</p>
+<p>Over the past two decades, and especially through the COVID-19 pandemic, <strong>infectious disease modeling became a central tool in public health decision-making</strong>.</p>
+<p>With this, we’ve seen an <strong>explosion of forecasting efforts</strong>.</p>
+<p>The growth has been <strong>encouraging</strong>: it reflects <strong>increased computational capacity</strong>, <strong>improved data availability</strong>, and <strong>global interest</strong> in predictive analytics for public health.</p>
+<p>But it initially also came with some growing pains.</p>
 <ul>
-<li><p><strong>Modeling efforts often develop independently</strong>: each group uses its <strong>own data structure</strong> for model outputs, <strong>metadata</strong>, and <strong>evaluation</strong>, making <strong>integration and comparison difficult.</strong></p></li>
-<li><p><strong>Modelers and decision-makers don’t always communicate clearly</strong>. model outputs <strong>may not match what public health needs</strong>.</p>
-<p>This results in <strong>significant fragmentation</strong> which <strong>limits the collective utility of modeling efforts.</strong></p></li>
+<li><p><strong>Modeling efforts developed independently</strong>: each group used its <strong>own data structure</strong> for model outputs, <strong>metadata</strong> and <strong>evaluation</strong>, making <strong>integration and comparison difficult</strong>.</p></li>
+<li><p><strong>Modelers and decision-makers didn’t always communicate clearly</strong>, so model outputs <strong>didn’t always match what public health actually needed</strong>.</p>
+<p>This initially <strong>limited the collective utility</strong> of all that work.</p></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -510,16 +517,14 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <p><a href="https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2022.306831"><strong><em>“Collaborative Hubs: Making the Most of Predictive Epidemic Modeling”</em></strong></a><em><strong>,</strong> American Journal of Public Health Reich, et al.&nbsp;2022</em></p>
 </blockquote>
 <aside class="notes">
-<p><strong>Modeling hubs</strong> which provide <strong>centralized infrastructure</strong> for <strong>coordinating the modeling efforts</strong> of multiple groups have been proposed as a solution:</p>
+<p><strong>Modeling hubs</strong>, which provide <strong>centralized infrastructure</strong> for <strong>coordinating the modeling efforts</strong> of multiple groups, have helped tackle such limitations.</p>
 <ul>
 <li><p>Firstly Hubs <strong>bring structure</strong> and a standardised central location for collecting model outputs.</p></li>
-<li><p>They <strong>establish a shared modeling protocol</strong>: what outcomes to forecast, for which locations and time horizons, in what format.</p></li>
-<li><p>By enforcing <strong>standards</strong> and <strong>submission rules</strong>, hubs ensure that <strong>forecasts can be examined and compared.</strong></p></li>
-<li><p>Standardization also <strong>allows for ensemble models that combine many forecasts</strong>, often outperforming individual models, a major asset during uncertain conditions.</p></li>
+<li><p>They <strong>establish a shared modeling protocol</strong>: what outcomes to forecast, in what format etc.</p></li>
+<li><p>By enforcing <strong>standards</strong> and <strong>submission rules</strong>, hubs ensure that <strong>forecasts can be compared.</strong></p></li>
+<li><p>Standardization also <strong>allows for ensemble models that combine many forecasts</strong>, often outperforming individual models.</p></li>
 <li><p>Hubs make it easier for stakeholders, from <strong>local agencies</strong> to <strong>national institutions</strong>, to <strong>access timely, interpretable forecasts</strong>.</p></li>
 </ul>
-<p>Modeling hubs <strong>transform isolated efforts</strong> into <strong>coordinated forecasting ecosystems</strong>.</p>
-<p>They aren’t just <strong>data repositories</strong>, they’re <strong>collaborative infrastructures</strong>.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -532,7 +537,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
           display:block!important;
       }</style></aside>
 </section>
-<section id="project-origins" class="slide level2 smaller">
+<section id="project-origins" class="slide level2">
 <h2>🕰️ Project origins</h2>
 <ul>
 <li><strong>Pre-COVID:</strong> Forecasting code base existed for CDC <strong>influenza</strong> hubs</li>
@@ -544,7 +549,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <figure>
 <div class="quarto-figure quarto-figure-left">
 <figure>
-<p><a href="assets/images/hub-history.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure credits: Alex Vespignani and Nicole Samay"><img data-src="assets/images/hub-history.png" class="quarto-figure quarto-figure-left" alt="Timeline of forecasting hub development" width="700"></a></p>
+<p><a href="assets/images/hub-history.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure credits: Alex Vespignani and Nicole Samay"><img data-src="assets/images/hub-history.png" class="quarto-figure quarto-figure-left" alt="Timeline of forecasting hub development" width="620"></a></p>
 </figure>
 </div>
 <figcaption>Figure credits: Alex Vespignani and Nicole Samay</figcaption>
@@ -553,11 +558,11 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <aside class="notes">
 <p>Before COVID, the US CDC had <strong>already established a foundation for collaborative infectious disease forecasting</strong> through its <strong>FluSight initiative</strong>, focused on influenza.</p>
 <p>This resulted in an <strong>initial working codebase to support such efforts</strong>.</p>
-<p>During the pandemic, <strong>interest in modeling hubs exploded</strong> and this infrastructure was called on for repurposing:</p>
-<p>• First by the <strong>US CDC COVID-19 Forecast Hub</strong></p>
+<p>During the pandemic, <strong>interest in modeling hubs exploded</strong> with many groups wanting to repurpose this infrastructure:</p>
+<p>• First the <strong>US CDC COVID-19 Forecast Hub</strong></p>
 <p>• Then interest grew to <strong>scenario modeling hubs</strong>, as well as <strong>internationally</strong>.</p>
 <p><strong>‼ BUT</strong> to set up each new hub, <strong>manual changes to the source code was required</strong>, obviously not ideal.</p>
-<p>This is what <strong>motivated the development</strong> of a more <strong>configurable</strong>, more <strong>generalized</strong> and more <strong>modular</strong> system to support <strong>new infectious disease modeling hubs.</strong></p>
+<p>This is what <strong>motivated the development</strong> of a more <strong>configurable</strong>, <strong>generalized</strong> and <strong>modular</strong> system to support <strong>new infectious disease modeling hubs.</strong></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -576,13 +581,20 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <ul>
 <li>GitHub repositories for <strong>centralising hub activity</strong></li>
 <li><strong>Data standards</strong> for infectious disease modeling data</li>
-<li><strong>Schema-driven configuratio</strong>n for modeling tasks + hub setup</li>
+<li><strong>Schema-driven configuration</strong> for modeling tasks + hub setup</li>
 <li>Modular tools for validation, access, evaluation, ensembling, communication and hub administration</li>
 <li><strong>Supports full lifecycle:</strong> from hub set up, data submission to decision-making</li>
 </ul>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>📄 Consortium of Infectious Disease Modeling Hubs <em>et al.</em> (2026) <strong>A software platform for collaborative infectious disease modelling</strong>, <em>Nature Health</em>. <a href="https://doi.org/10.1038/s44360-026-00145-7" class="uri">https://doi.org/10.1038/s44360-026-00145-7</a></p>
+</div>
+</div>
+</div>
 <aside class="notes">
-<p>… an <strong>what lead to the creation of the hubverse</strong></p>
-<p>&gt; which is an <strong>open-source software ecosystem</strong> designed <strong>to support the full lifecycle of infectious disease modeling hubs</strong>.</p>
+<p>… and this is really <strong>how the hubverse began</strong>,</p>
+<p>which is an <strong>open-source software ecosystem</strong> designed <strong>to support the full lifecycle of infectious disease modeling hubs</strong>.</p>
 <p>It brings together:</p>
 <ul>
 <li>Centralised version controlled location for hub activities through GitHub repositories</li>
@@ -603,31 +615,162 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
       }</style></aside>
 </section></section>
 <section>
-<section id="hubverse-overview" class="title-slide slide level1 inverse center" data-background-color="black">
-<h1>Hubverse overview</h1>
-
+<section id="anatomy-of-a-hub" class="title-slide slide level1 inverse center" data-background-color="black">
+<h1>Anatomy of a hub</h1>
+<aside class="notes">
+<p>So let’s start by looking at <strong>what a hub actually is</strong>, before we get into how you configure and operate one.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="standardised-data" class="slide level2">
-<h2>☑️ Standardised Data</h2>
+<section id="what-a-hub-actually-is" class="slide level2 scrollable">
+<h2>🏗️ What a hub actually is</h2>
+<div class="columns">
+<div class="column" style="width:62%;">
+<p><a href="assets/images/paper-fig1-hub-architecture.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="assets/images/paper-fig1-hub-architecture.jpg" style="width:80.0%" alt="Diagram of hub architecture: model teams submit model output, which is validated against tasks.json and merged into the model-output directory alongside target data, then flows into ensembles, visualizations and evaluations."></a></p>
+</div><div class="column" style="width:38%;">
+<ol type="1">
+<li>Modeling teams <strong>submit model output</strong></li>
+<li>Submissions <strong>validated</strong> against <code>tasks.json</code></li>
+<li>Accepted output <strong>merged into the hub</strong></li>
+</ol>
+<p>Everything downstream, <strong>ensembles</strong>, <strong>visualisations</strong>, <strong>evaluations</strong>, comes for free once the data are standardised.</p>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Figure 1 from the <a href="https://doi.org/10.1038/s44360-026-00145-7">hubverse paper</a> (<a href="https://doi.org/10.1101/2025.10.03.25337284">preprint</a>, CC BY 4.0)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Here’s a general overview of a hub which usually lives in a github repository</p>
+<p>It starts with the <strong>hub administrator</strong>. They <strong>configure the hub</strong> which sets out exactly what predictions the hub wants to collect.</p>
+<p>They also <strong>maintain <code>target-data</code></strong>: what <strong>actually happened</strong>, which is what predictions are scored against.</p>
+<p>With that in place, different <strong>modeling teams</strong> submit model outputs of any type of model they want really as long as it matches hub expectations and requirements.</p>
+<p>To confirm this, each submission is then <strong>validated against the configuration</strong>. If it passes, it’s <strong>merged</strong>.</p>
+<p>… and downstream activities like building <strong>ensembles</strong>, <strong>visualising</strong>, and <strong>evaluating</strong> model outputs follow.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="a-shared-data-standard" class="slide level2">
+<h2>☑️ A shared data standard</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
 <p>Modeling hubs are <strong>built around a shared data standard:</strong></p>
 <ul>
-<li><strong>Modeling task definition</strong>: targets (response variables), standard predictors, output types (e.g.&nbsp;<code>mean</code>, <code>quantiles</code>)</li>
+<li><strong>Modeling task definition</strong>: what’s predicted, by when, for where, in what form</li>
 <li><strong>Structured hub layout</strong>: consistent file system for organizing submissions</li>
 <li><strong>Standard model output format</strong>: for file content and naming</li>
 </ul>
 <p>✅ Enables comparability, validation, and streamlined data access</p>
+</div><div class="column" style="width:48%;">
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href=""></a><span class="ex">FluSight-forecast-hub/</span></span>
+<span id="cb1-2"><a href=""></a><span class="ex">├──</span> hub-config/</span>
+<span id="cb1-3"><a href=""></a><span class="ex">│</span>   ├── admin.json</span>
+<span id="cb1-4"><a href=""></a><span class="ex">│</span>   ├── tasks.json</span>
+<span id="cb1-5"><a href=""></a><span class="ex">│</span>   ├── model-metadata-schema.json</span>
+<span id="cb1-6"><a href=""></a><span class="ex">│</span>   └── target-data.json</span>
+<span id="cb1-7"><a href=""></a><span class="ex">├──</span> model-output/</span>
+<span id="cb1-8"><a href=""></a><span class="ex">│</span>   └── <span class="op">&lt;</span>model_id<span class="op">&gt;</span>/</span>
+<span id="cb1-9"><a href=""></a><span class="ex">│</span>       └── <span class="op">&lt;</span>round_id<span class="op">&gt;</span>-<span class="op">&lt;</span>model_id<span class="op">&gt;</span>.csv</span>
+<span id="cb1-10"><a href=""></a><span class="ex">├──</span> model-metadata/</span>
+<span id="cb1-11"><a href=""></a><span class="ex">│</span>   └── <span class="op">&lt;</span>model_id<span class="op">&gt;</span>.yml</span>
+<span id="cb1-12"><a href=""></a><span class="ex">└──</span> target-data/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
 <aside class="notes">
-<p><strong>At its core</strong>, the hubverse represents a <strong>shared data standard</strong>.<br>
-Everything else <strong>builds on that foundation.</strong></p>
-<p>This covers how modeling task are defined:</p>
+<p>And all this is <strong>primarily enabled by the core of the hubverse</strong> which is a <strong>shared data standard</strong>. Everything else <strong>builds on that foundation.</strong></p>
+<p>The standard covers three things.</p>
+<p><strong>One:</strong> how a <strong>modeling task</strong> is defined, what’s being predicted, which predictors are used, what output types are accepted.</p>
+<p><strong>Two:</strong> the <strong>hub layout</strong> itself, which you can see on the right. <code>hub-config</code> for config files, <code>model-output</code> for submissions, one directory per model, <code>model-metadata</code> for metadata files describing each model, and <code>target-data</code> for storing observed data.</p>
+<p><strong>Three:</strong> the <strong>model output files themselves</strong> follow a <strong>consistent format</strong> and <strong>naming</strong> convention.</p>
+<p>Together, these make model outputs <strong>directly comparable</strong> and <strong>easy to combine downstream</strong>.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="meet-the-hub-cdc-flusight" class="title-slide slide level1 inverse center" data-background-color="black">
+<h1>🦠 Meet the hub: CDC FluSight</h1>
+<aside class="notes">
+<p>Before I go any further, let me introduce <strong>a real hub</strong> so we can on <strong>everything I show you comes from it</strong>.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-hub-well-follow-cdc-flusight" class="slide level2">
+<h2>The hub we’ll follow: <a href="https://github.com/cdcepi/FluSight-forecast-hub">CDC FluSight</a></h2>
+<p><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/cdcepi/FluSight-forecast-hub" class="uri"><strong>https://github.com/cdcepi/FluSight-forecast-hub</strong></a></p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><a href="assets/images/flusight-hub.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/images/flusight-hub.png" style="width:92.0%" alt="Screenshot of CDC Flusight Hub Github repo"></a></p>
+</div><div class="column smaller" style="width:30%;">
 <ul>
-<li><p>what’s being predicted,</p></li>
-<li><p>which predictors are to be used,</p></li>
-<li><p>and what output types are accepted.</p></li>
+<li>Used by US CDC to <strong>monitor influenza severity</strong></li>
+<li>In season, <strong>~60 models</strong> from <strong>~30 teams</strong>, every single week</li>
+<li><strong>95 models</strong> from <strong>47 teams</strong> across <strong>88 rounds</strong> since 2023</li>
+<li>Hosted on <strong>GitHub + S3 cloud mirror</strong></li>
+<li>Managed with the <strong>full hubverse stack since 2023/24</strong></li>
 </ul>
-<p>Model outputs are submitted within a <strong>structured hub layout</strong>, so <strong>files</strong> are always stored in <strong>predictable</strong> <strong>standard locations.</strong></p>
-<p>Finally, the <strong>model output files themselves</strong> follow a <strong>consistent format</strong> and <strong>naming</strong> convention.</p>
-<p>Together, <strong>these standards</strong> make <strong>model outputs directly comparable</strong> and <strong>easy to combine in downstream analysis</strong>.</p>
+<p><a href="assets/images/cdc-logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="assets/images/cdc-logo.png" alt="US CDC logo" width="110"></a></p>
+</div>
+</div>
+<aside class="notes">
+<p>The <strong>CDC FluSight Hub</strong> is a flagship example of the hubverse stack in action.</p>
+<p>It’s used by the <strong>US CDC to monitor influenza severity</strong> through <strong>weekly model outputs</strong>. In the middle of a season that’s around <strong>60 models</strong> arriving from about <strong>30 teams</strong>, <strong>every week</strong>. Cumulatively, <strong>95 models</strong> from <strong>47 teams</strong> have submitted across <strong>88 rounds</strong> since 2023.</p>
+<p>The hub is <strong>fully managed</strong> using the hubverse software, <strong>workflows</strong> and <strong>S3 cloud mirroring</strong> since the <strong>2023/24 season</strong>.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="configuring-flusight" class="title-slide slide level1 inverse center" data-background-color="black">
+<h1>Configuring FluSight</h1>
+<aside class="notes">
+<p>Let’s start by taking a look at the <strong>FluSight’s config files</strong> to see <strong>how a hub is actually configured</strong></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -642,32 +785,32 @@ Everything else <strong>builds on that foundation.</strong></p>
 </section>
 <section id="config-driven-hub-setup" class="slide level2">
 <h2>⚙️ Config-driven hub setup</h2>
-<p><strong>Hub administrators configure hubs using structured JSON config files:</strong></p>
+<p><strong>Hub administrators configure hubs with structured JSON config files:</strong></p>
 <ul>
-<li><code>admin.json</code>: hub-level metadata.</li>
-<li><code>task.json</code>: modeling task specification:
-<ul>
-<li><strong>Task IDs</strong>: Targets (response), horizons, locations (predictors) etc.</li>
-<li><strong>Output types</strong>: accepted model outputs e.g.&nbsp;<code>mean</code>, <code>median</code>, <code>quantiles</code>, <code>cdf</code>, <code>pmf</code>, <code>samples</code>.</li>
-</ul></li>
-<li>Configs are validated against a shared JSON <a href="https://github.com/hubverse-org/schemas"><strong>schema</strong></a></li>
+<li><code>admin.json</code>: hub-level metadata and infrastructure</li>
+<li><code>tasks.json</code>: the <strong>scientific question</strong>: what to predict, when, and how</li>
+<li><code>model-metadata-schema.json</code>: what modelers must tell you about their model</li>
+<li><code>target-data.json</code>: where the observed data live</li>
 </ul>
+<div class="callout callout-tip no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>All validated against a <strong>versioned JSON <a href="https://github.com/hubverse-org/schemas">schema</a></strong>. The config <em>is</em> the contract between administrators, modelers and tooling.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>📦 <a href="https://hubverse-org.github.io/hubAdmin/"><code>hubAdmin</code></a> <strong>validates and can create</strong> these files programmatically.</p>
+</div>
+</div>
+</div>
 <aside class="notes">
-<p>Another key feature of the hubverse is that <strong>hub setup is configuration-based</strong>.</p>
-<p>Administrators define the <strong>hub’s goals</strong> and <strong>expectations</strong> through <strong>structured JSON config files</strong>:</p>
-<ul>
-<li><strong><code>admin.json</code></strong> describes <strong>hub-level</strong> properties like hub name, maintainers, timezone, allowed data formats etc.<br>
-</li>
-<li><strong><code>task.json</code></strong> defines the <strong>modeling tasks</strong>:
-<ul>
-<li>what targets (response variable),</li>
-<li>what predictor variables (other task IDs),</li>
-<li>and which output types are accepted for a given modeling task.</li>
-</ul></li>
-</ul>
-<p>Config files are <strong>validated</strong> against a <strong>JSON schema</strong> and are used for <strong>validating submissions</strong>.</p>
-<p>The result is that <strong>new hubs can be spun up quickly</strong> and <strong>modeling tasks are clearly and unambiguously defined</strong> from the start.</p>
-<p>This enables <strong>clear communication of tasks by administrators</strong> <strong>ensuring modeling efforts are policy relevant.</strong></p>
+<p>Hub setup is configuration-based. No forking, no editing source code.</p>
+<p>Administrators configure the hub through structured JSON files in <code>hub-config</code>. <code>admin.json</code> for hub-level properties. <code>tasks.json</code> for the modeling tasks ie the scientific question. <code>model-metadata-schema.json</code> for model level metadata and <code>target-data.json</code> which defines expectations for the observed data.</p>
+<p>Config files themselves are validated against a versioned JSON schema that we maintain.</p>
+<p><strong>The config is the contract.</strong> It’s how the admin communicates with the teams, what the validation enforces, and what every downstream tool uses to understand the hub.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -680,54 +823,40 @@ Everything else <strong>builds on that foundation.</strong></p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="the-r-and-friends-package-stack" class="slide level2">
-<h2>📦 The R (and friends) package stack</h2>
-<p>The hubverse package ecosystem is organized by <strong>role</strong>. Each tool is designed to support a particular group of users in the hub workflow.</p>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><strong>Hub roles</strong></p>
-<ul>
-<li>🛠️ Hub administrators<br>
-</li>
-<li>🔬 Modelers<br>
-</li>
-<li>📊 Analysts<br>
-</li>
-<li>🏛️ Policy makers<br>
-</li>
-</ul>
-</div><div class="column" style="width:60%;">
-<p><strong>Tools &amp; packages</strong></p>
-<ul>
-<li><p><a href="https://hubverse-org.r-universe.dev/hubAdmin"><code>hubAdmin</code></a> <a href="https://hubverse-org.github.io/hubAdmin/"><i class="fa-solid fa-book" aria-label="book"></i></a>: config creation + validation 🛠️</p></li>
-<li><p><a href="https://hubverse-org.r-universe.dev/hubValidations"><code>hubValidations</code></a> <a href="https://hubverse-org.github.io/hubValidations/"><i class="fa-solid fa-book" aria-label="book"></i></a>: submission checks (structure, schema, content) 🔬 🛠️</p></li>
-<li><p><a href="https://hubverse-org.r-universe.dev/hubData"><code>hubData</code></a> (R) <a href="https://hubverse-org.github.io/hubData/"><i class="fa-solid fa-book" aria-label="book"></i></a> / <a href="https://pypi.org/project/hubdata/"><code>hubdata</code></a> (Python) <a href="https://hubverse-org.github.io/hub-data/"><i class="fa-solid fa-book" aria-label="book"></i></a>: access multi-file model output via Arrow 🛠️ 🔬 📊 🏛️</p></li>
-<li><p><a href="https://hubverse-org.r-universe.dev/hubEvals"><code>hubEvals</code></a> <a href="https://hubverse-org.github.io/hubEvals/"><i class="fa-solid fa-book" aria-label="book"></i></a>: compute evaluation metrics 🛠️ 📊 🏛️</p></li>
-<li><p><a href="https://hubverse-org.r-universe.dev/hubEnsembles"><code>hubEnsembles</code></a> <a href="https://hubverse-org.github.io/hubEnsembles/"><i class="fa-solid fa-book" aria-label="book"></i></a>: build weighted/unweighted ensembles 🛠 📊 🏛️</p></li>
-<li><p><a href="https://hubverse-org.r-universe.dev/hubVis"><code>hubVis</code></a> <a href="https://hubverse-org.github.io/hubVis/"><i class="fa-solid fa-book" aria-label="book"></i></a>: visualise model outputs 🛠️ 📊 🏛️</p></li>
-</ul>
-</div>
-</div>
+<section id="admin.json-the-hubs-identity-card" class="slide level2">
+<h2>🗂️ <code>admin.json</code>: the hub’s identity card</h2>
+<div class="sourceCode" id="cb2" data-code-line-numbers="|2|3-8|9-13|14-21"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a href=""></a><span class="fu">{</span></span>
+<span id="cb2-2"><a href=""></a>  <span class="dt">"schema_version"</span><span class="fu">:</span> <span class="st">".../schemas/main/v6.0.0/admin-schema.json"</span><span class="fu">,</span></span>
+<span id="cb2-3"><a href=""></a>  <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"US CDC FluSight"</span><span class="fu">,</span></span>
+<span id="cb2-4"><a href=""></a>  <span class="dt">"maintainer"</span><span class="fu">:</span> <span class="st">"US CDC"</span><span class="fu">,</span></span>
+<span id="cb2-5"><a href=""></a>  <span class="dt">"contact"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-6"><a href=""></a>    <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"Rebecca Borchering"</span><span class="fu">,</span></span>
+<span id="cb2-7"><a href=""></a>    <span class="dt">"email"</span><span class="fu">:</span> <span class="st">"xhq2@cdc.gov"</span></span>
+<span id="cb2-8"><a href=""></a>  <span class="fu">},</span></span>
+<span id="cb2-9"><a href=""></a>  <span class="dt">"repository"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-10"><a href=""></a>    <span class="dt">"host"</span><span class="fu">:</span> <span class="st">"github"</span><span class="fu">,</span></span>
+<span id="cb2-11"><a href=""></a>    <span class="dt">"owner"</span><span class="fu">:</span> <span class="st">"cdcepi"</span><span class="fu">,</span></span>
+<span id="cb2-12"><a href=""></a>    <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"FluSight-forecast-hub"</span></span>
+<span id="cb2-13"><a href=""></a>  <span class="fu">},</span></span>
+<span id="cb2-14"><a href=""></a>  <span class="dt">"file_format"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"csv"</span><span class="ot">,</span> <span class="st">"parquet"</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-15"><a href=""></a>  <span class="dt">"timezone"</span><span class="fu">:</span> <span class="st">"US/Eastern"</span><span class="fu">,</span></span>
+<span id="cb2-16"><a href=""></a>  <span class="dt">"cloud"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-17"><a href=""></a>    <span class="dt">"enabled"</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span></span>
+<span id="cb2-18"><a href=""></a>    <span class="dt">"host"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-19"><a href=""></a>      <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"aws"</span><span class="fu">,</span></span>
+<span id="cb2-20"><a href=""></a>      <span class="dt">"storage_service"</span><span class="fu">:</span> <span class="st">"s3"</span><span class="fu">,</span></span>
+<span id="cb2-21"><a href=""></a>      <span class="dt">"storage_location"</span><span class="fu">:</span> <span class="st">"cdcepi-flusight-forecast-hub"</span></span>
+<span id="cb2-22"><a href=""></a>    <span class="fu">}</span></span>
+<span id="cb2-23"><a href=""></a>  <span class="fu">}</span></span>
+<span id="cb2-24"><a href=""></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
-<aside class="notes">
-<p>Let me now <strong>introduce the core hubverse packages</strong> that support our <strong>modeling hub infrastructure.</strong></p>
-<p>We’ve intentionally organized the ecosystem by <strong>user role</strong>. That’s because a <strong>modeling hub isn’t a single-user platform</strong>, it involves <strong>multiple roles</strong>, each with distinct <strong>responsibilities</strong>, <strong>technical skills</strong>, and <strong>needs</strong>.</p>
-<p>On the <strong>left</strong>, we show the primary roles:</p>
-<ul>
-<li><strong>Hub administrators</strong> are responsible for setting up and maintaining the hub’s infrastructure and configuration.</li>
-<li><strong>Modelers</strong> focus on submitting model outputs via pull requests.</li>
-<li><strong>Analysts</strong> need to <strong>explore</strong>, <strong>combine</strong>, and <strong>evaluate</strong> forecast data, often across many models and time points.</li>
-<li><strong>Policy makers</strong> or Public health officials typically need <strong>high-level summaries</strong>, <strong>dashboards</strong>, and <strong>access to curated insights</strong>, not raw files.</li>
-</ul>
-<p>On the <strong>right</strong>, we map each of these user groups to the packages that support their work:</p>
-<ul>
-<li><code>hubAdmin</code> helps <strong>administrators</strong> create and validate the structure of their configuration files.</li>
-<li><code>hubValidations</code> is the gatekeeper, enforcing the standards set by the admins by validating every PR, ensuring files are named, structured, and formatted correctly. Can also be used by modelers prior to submitting.</li>
-<li><code>hubData</code> (available in both R and Python) gives <strong>analysts</strong> and <strong>modelers</strong> an easy way to <strong>directly access multi-file</strong> model outputs directly as Arrow datasets.</li>
-<li><code>hubEvals</code> <strong>supports</strong> model evaluation.</li>
-<li><code>hubEnsembles</code> provides <strong>functions for combining</strong> model outputs into ensembles.</li>
-<li><code>hubVis</code> supports model output and ensemble visualisations.</li>
-</ul>
+<p>This is the <code>admin.json</code> from the CDC FluSight hub.</p>
+<p><em>(step through the highlights)</em></p>
+<p>First, <code>schema_version</code>. Pins the config to a specific schema version, v6 here.</p>
+<p>Then typical administrative metadata like Hub name, maintainer, etc.</p>
+<p>Then where the hub lives.</p>
+<p>followed by operational settings like what <code>file_format</code>s are allowed and the <code>timezone</code> submission deadlines are gated relative to.</p>
+<p>Finally <code>cloud</code> allows admins to define whether and where a cloud mirror of hub data exists. More on that shortly.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -739,6 +868,519 @@ Everything else <strong>builds on that foundation.</strong></p>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="inside-tasks.json" class="slide level2">
+<h2>🎯 Inside <code>tasks.json</code></h2>
+<div class="sourceCode" id="cb3" data-code-line-numbers="|3-4|5|6|7-9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href=""></a><span class="ex">tasks.json</span></span>
+<span id="cb3-2"><a href=""></a><span class="ex">└──</span> rounds[]                                   <span class="co"># a submission cycle</span></span>
+<span id="cb3-3"><a href=""></a>    <span class="ex">├──</span> round_id_from_variable: true           <span class="co"># round IDs live in the data...</span></span>
+<span id="cb3-4"><a href=""></a>    <span class="ex">├──</span> round_id: <span class="st">"reference_date"</span>             <span class="co"># ...in this task ID</span></span>
+<span id="cb3-5"><a href=""></a>    <span class="ex">├──</span> submissions_due                        <span class="co"># window, relative to the round</span></span>
+<span id="cb3-6"><a href=""></a>    <span class="ex">└──</span> model_tasks[]                          <span class="co"># groups of related predictions</span></span>
+<span id="cb3-7"><a href=""></a>        <span class="ex">├──</span> task_ids{}                         <span class="co"># the DIMENSIONS of a prediction</span></span>
+<span id="cb3-8"><a href=""></a>        <span class="ex">├──</span> output_type{}                      <span class="co"># the FORM the prediction takes</span></span>
+<span id="cb3-9"><a href=""></a>        <span class="ex">└──</span> target_metadata[]                  <span class="co"># what the target means</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>A hub can have <strong>many rounds</strong>, each with <strong>many model tasks</strong>, so a single hub can ask for <strong>several different kinds of prediction</strong> at once.</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p><code>tasks.json</code> is the more complex but also more consequential config, so let’s take a closer look.</p>
+<p>At the top level we have rounds. A round is one submission cycle. For FluSight that’s a week.</p>
+<p>Each round has a <code>round_id</code>. This can work two ways. 1. It can be a literal string if a hub uses separate config blocks for each round. 2. But if the rounds are driven by a variable in the data, admins supply the <strong>name of a task ID</strong>, that task ID’s values become the round IDs but all other configuration is shared between rounds. That’s what <code>round_id_from_variable: true</code> is flagging.</p>
+<p><code>submissions_due</code> sets the submission window.</p>
+<p>Then model tasks. This is where a hub defines what it actually wants predicted. Each task is written as three blocks.</p>
+<p><code>task_ids</code> effectively define the predictor variables.</p>
+<p><code>output_type</code> is the form it takes. A quantile, a probability, a sample.</p>
+<p>And <code>target_metadata</code> holds additional information about modeling targets.</p>
+<p>Because a round can hold several model tasks, one hub can ask for quite different predictions at the same time. FluSight asks for both a count of hospitalisations and a categorical rate-change outlook, in the same round.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="task-ids-the-dimensions-of-a-prediction" class="slide level2">
+<h2>🏷️ Task IDs: the dimensions of a prediction</h2>
+<div class="sourceCode" id="cb4" data-code-line-numbers="|18-21"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb4-1"><a href=""></a><span class="er">"task_ids":</span> <span class="fu">{</span></span>
+<span id="cb4-2"><a href=""></a>  <span class="dt">"reference_date"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb4-3"><a href=""></a>    <span class="dt">"required"</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span></span>
+<span id="cb4-4"><a href=""></a>    <span class="dt">"optional"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"2023-10-07"</span><span class="ot">,</span> <span class="st">"2023-10-14"</span><span class="ot">,</span> <span class="st">"..."</span><span class="ot">]</span></span>
+<span id="cb4-5"><a href=""></a>  <span class="fu">},</span></span>
+<span id="cb4-6"><a href=""></a>  <span class="dt">"target"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb4-7"><a href=""></a>    <span class="dt">"required"</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span></span>
+<span id="cb4-8"><a href=""></a>    <span class="dt">"optional"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"wk inc flu hosp"</span><span class="ot">]</span></span>
+<span id="cb4-9"><a href=""></a>  <span class="fu">},</span></span>
+<span id="cb4-10"><a href=""></a>  <span class="dt">"horizon"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb4-11"><a href=""></a>    <span class="dt">"required"</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span></span>
+<span id="cb4-12"><a href=""></a>    <span class="dt">"optional"</span><span class="fu">:</span> <span class="ot">[</span><span class="dv">-1</span><span class="ot">,</span> <span class="dv">0</span><span class="ot">,</span> <span class="dv">1</span><span class="ot">,</span> <span class="dv">2</span><span class="ot">,</span> <span class="dv">3</span><span class="ot">]</span></span>
+<span id="cb4-13"><a href=""></a>  <span class="fu">},</span></span>
+<span id="cb4-14"><a href=""></a>  <span class="dt">"location"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb4-15"><a href=""></a>    <span class="dt">"required"</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span></span>
+<span id="cb4-16"><a href=""></a>    <span class="dt">"optional"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"US"</span><span class="ot">,</span> <span class="st">"01"</span><span class="ot">,</span> <span class="st">"02"</span><span class="ot">,</span> <span class="st">"..."</span><span class="ot">]</span></span>
+<span id="cb4-17"><a href=""></a>  <span class="fu">},</span></span>
+<span id="cb4-18"><a href=""></a>  <span class="dt">"target_end_date"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb4-19"><a href=""></a>    <span class="dt">"required"</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span></span>
+<span id="cb4-20"><a href=""></a>    <span class="dt">"optional"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"2023-09-23"</span><span class="ot">,</span> <span class="st">"2023-09-30"</span><span class="ot">,</span> <span class="st">"..."</span><span class="ot">]</span></span>
+<span id="cb4-21"><a href=""></a>  <span class="fu">}</span></span>
+<span id="cb4-22"><a href=""></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-tip no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><code>reference_date</code> + <code>horizon</code> × 1 week = <code>target_end_date</code></p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Here’s the task ID block from FluSight, abridged.</p>
+<p>Every task ID gets two lists. <code>required</code> and <code>optional</code>. Required means you must submit a prediction for every one of those values. Optional means you may, but you don’t have to. For FluSight, every combination is optional.</p>
+<p>These are all standard forecasting task IDs, so they’re covered by the hubverse schema and validated strongly out of the box. Hubs aren’t restricted to them, though. You can define whatever task ID your modelling needs, you’ll just have to add custom validation for it.</p>
+<p>And <code>target_end_date</code> is a derived task ID. Its values have a one to one relationship with other task IDs: here the reference date, which is also the round ID, plus the horizon gives you the target end date.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="targets-carry-more-than-a-name" class="slide level2">
+<h2>🎯 Targets carry more than a name</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><code>target</code> is a special task ID: every value in the column gets its own metadata entry</p>
+<div class="sourceCode" id="cb5" data-code-line-numbers="|3-6|7|8-9|10"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb5-1"><a href=""></a><span class="er">"target_metadata":</span> <span class="ot">[</span><span class="fu">{</span></span>
+<span id="cb5-2"><a href=""></a>  <span class="dt">"target_id"</span><span class="fu">:</span> <span class="st">"wk inc flu hosp"</span><span class="fu">,</span></span>
+<span id="cb5-3"><a href=""></a>  <span class="dt">"target_name"</span><span class="fu">:</span> <span class="st">"incident influenza</span></span>
+<span id="cb5-4"><a href=""></a><span class="st">     hospitalizations"</span><span class="fu">,</span></span>
+<span id="cb5-5"><a href=""></a>  <span class="dt">"description"</span><span class="fu">:</span> <span class="st">"Count of new hospital</span></span>
+<span id="cb5-6"><a href=""></a><span class="st">     admissions in the week ending..."</span><span class="fu">,</span></span>
+<span id="cb5-7"><a href=""></a>  <span class="dt">"target_units"</span><span class="fu">:</span> <span class="st">"count"</span><span class="fu">,</span></span>
+<span id="cb5-8"><a href=""></a>  <span class="dt">"is_step_ahead"</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span></span>
+<span id="cb5-9"><a href=""></a>  <span class="dt">"time_unit"</span><span class="fu">:</span> <span class="st">"week"</span><span class="fu">,</span></span>
+<span id="cb5-10"><a href=""></a>  <span class="dt">"target_type"</span><span class="fu">:</span> <span class="st">"continuous"</span></span>
+<span id="cb5-11"><a href=""></a><span class="fu">}</span><span class="ot">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:48%;">
+<p><strong>Descriptive</strong></p>
+<ul>
+<li><code>target_name</code>, <code>description</code>: for humans, and for axis labels</li>
+</ul>
+<p><strong>Quantitative</strong></p>
+<ul>
+<li><code>target_units</code>: what is being counted</li>
+<li><code>is_step_ahead</code>, <code>time_unit</code>: one step in a sequence</li>
+<li><code>target_type</code>: its statistical type (<code>continuous</code>, <code>ordinal</code>, <code>date</code>, …)</li>
+</ul>
+<div class="callout callout-tip no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><code>target_type</code> constrains <strong>how a prediction of this target can be expressed</strong>. Which is exactly what an <strong>output type</strong> is…</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p><code>target</code> is a special task ID, so every value in the target column gets its own entry in <code>target_metadata</code>.</p>
+<p>Some of that is descriptive. A human readable name, a fuller description. Useful for people, and for labelling an axis on a dashboard.</p>
+<p>But it also carries quantitative properties. The units. Whether it’s a step ahead forecast, and in what time unit. And the target’s statistical type.</p>
+<p>Target type provides additional statistical properties of the target being predicted and is intimately linked to the last important tasks config block. And that is the output type.</p>
+<p>So let’s look at those.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="output-types-how-a-prediction-is-expressed" class="slide level2 smaller">
+<h2>📐 Output types: how a prediction is expressed</h2>
+<svg class="hv-outputs" viewbox="0 0 1600 372" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hv-out-title hv-out-desc">
+  <title id="hv-out-title">Four ways of writing down the same predictive distribution</title>
+  <desc id="hv-out-desc">One right-skewed predictive distribution shown four ways. Quantile output records the value at each probability level, with the median at the 0.5 quantile and the mean sitting to its right because the distribution is skewed. CDF output records the cumulative probability at or below a value. PMF output gives a probability per category. Sample output gives individual draws, where one index is a coherent trajectory across horizons.</desc>
+  <g>
+    <text x="200" y="34" text-anchor="middle" fill="#3b88bf" font-size="22" font-weight="600" font-family="'Fira Code', monospace">quantile · mean · median</text>
+    <text x="200" y="62" text-anchor="middle" fill="#5b5b5b" font-size="16">the distribution, and two point estimates</text>
+    <line x1="40" y1="300" x2="352" y2="300" stroke="#c9d3da" stroke-width="2"></line>
+    <polygon points="45.0,300 45.0,300.0 47.1,300.0 49.3,299.0 51.4,294.2 53.6,284.1 55.7,269.0 57.9,250.3 60.0,229.7 62.1,208.7 64.3,188.5 66.4,169.9 68.6,153.2 70.7,138.8 72.9,126.6 75.0,116.7 77.1,108.9 79.3,103.0 81.4,98.9 83.6,96.3 85.7,95.1 87.9,95.1 90.0,96.2 92.1,98.0 94.3,100.6 96.4,103.9 98.6,107.6 100.7,111.6 102.9,116.0 105.0,120.7 107.1,125.5 109.3,130.4 111.4,135.4 113.6,140.5 115.7,145.5 117.9,150.5 120.0,155.5 122.1,160.4 124.3,165.2 126.4,169.9 128.6,174.5 130.7,179.0 132.9,183.4 135.0,187.6 137.1,191.8 139.3,195.8 141.4,199.6 143.6,203.4 145.7,207.0 147.9,210.5 150.0,213.9 152.1,217.1 154.3,220.2 156.4,223.2 158.6,226.1 160.7,228.9 162.9,231.6 165.0,234.2 167.1,236.7 169.3,239.1 171.4,241.4 173.6,243.6 175.7,245.7 177.9,247.7 180.0,249.7 182.1,251.5 184.3,253.3 186.4,255.1 188.6,256.7 190.7,258.3 192.9,259.9 195.0,261.3 197.1,262.7 199.3,264.1 201.4,265.4 203.6,266.6 205.7,267.9 207.9,269.0 210.0,270.1 212.1,271.2 214.3,272.2 216.4,273.2 218.6,274.1 220.7,275.1 222.9,275.9 225.0,276.8 227.1,277.6 229.3,278.4 231.4,279.1 233.6,279.8 235.7,280.5 237.9,281.2 240.0,281.8 242.1,282.4 244.3,283.0 246.4,283.6 248.6,284.1 250.7,284.7 252.9,285.2 255.0,285.7 257.1,286.2 259.3,286.6 261.4,287.0 263.6,287.5 265.7,287.9 267.9,288.3 270.0,288.6 272.1,289.0 274.3,289.4 276.4,289.7 278.6,290.0 280.7,290.3 282.9,290.6 285.0,290.9 287.1,291.2 289.3,291.5 291.4,291.8 293.6,292.0 295.7,292.3 297.9,292.5 300.0,292.7 302.1,293.0 304.3,293.2 306.4,293.4 308.6,293.6 310.7,293.8 312.9,294.0 315.0,294.1 317.1,294.3 319.3,294.5 321.4,294.6 323.6,294.8 325.7,295.0 327.9,295.1 330.0,295.2 332.1,295.4 334.3,295.5 336.4,295.6 338.6,295.8 340.7,295.9 342.9,296.0 345.0,296.1 345.0,300" fill="#eaf3fa"></polygon>
+    <polyline points="45.0,300.0 47.1,300.0 49.3,299.0 51.4,294.2 53.6,284.1 55.7,269.0 57.9,250.3 60.0,229.7 62.1,208.7 64.3,188.5 66.4,169.9 68.6,153.2 70.7,138.8 72.9,126.6 75.0,116.7 77.1,108.9 79.3,103.0 81.4,98.9 83.6,96.3 85.7,95.1 87.9,95.1 90.0,96.2 92.1,98.0 94.3,100.6 96.4,103.9 98.6,107.6 100.7,111.6 102.9,116.0 105.0,120.7 107.1,125.5 109.3,130.4 111.4,135.4 113.6,140.5 115.7,145.5 117.9,150.5 120.0,155.5 122.1,160.4 124.3,165.2 126.4,169.9 128.6,174.5 130.7,179.0 132.9,183.4 135.0,187.6 137.1,191.8 139.3,195.8 141.4,199.6 143.6,203.4 145.7,207.0 147.9,210.5 150.0,213.9 152.1,217.1 154.3,220.2 156.4,223.2 158.6,226.1 160.7,228.9 162.9,231.6 165.0,234.2 167.1,236.7 169.3,239.1 171.4,241.4 173.6,243.6 175.7,245.7 177.9,247.7 180.0,249.7 182.1,251.5 184.3,253.3 186.4,255.1 188.6,256.7 190.7,258.3 192.9,259.9 195.0,261.3 197.1,262.7 199.3,264.1 201.4,265.4 203.6,266.6 205.7,267.9 207.9,269.0 210.0,270.1 212.1,271.2 214.3,272.2 216.4,273.2 218.6,274.1 220.7,275.1 222.9,275.9 225.0,276.8 227.1,277.6 229.3,278.4 231.4,279.1 233.6,279.8 235.7,280.5 237.9,281.2 240.0,281.8 242.1,282.4 244.3,283.0 246.4,283.6 248.6,284.1 250.7,284.7 252.9,285.2 255.0,285.7 257.1,286.2 259.3,286.6 261.4,287.0 263.6,287.5 265.7,287.9 267.9,288.3 270.0,288.6 272.1,289.0 274.3,289.4 276.4,289.7 278.6,290.0 280.7,290.3 282.9,290.6 285.0,290.9 287.1,291.2 289.3,291.5 291.4,291.8 293.6,292.0 295.7,292.3 297.9,292.5 300.0,292.7 302.1,293.0 304.3,293.2 306.4,293.4 308.6,293.6 310.7,293.8 312.9,294.0 315.0,294.1 317.1,294.3 319.3,294.5 321.4,294.6 323.6,294.8 325.7,295.0 327.9,295.1 330.0,295.2 332.1,295.4 334.3,295.5 336.4,295.6 338.6,295.8 340.7,295.9 342.9,296.0 345.0,296.1" fill="none" stroke="#3b88bf" stroke-width="3" stroke-linejoin="round"></polyline>
+    <line x1="62.3" y1="300" x2="62.3" y2="207.3" stroke="#24628f" stroke-width="1.8" stroke-dasharray="4 3"></line>
+    <circle cx="62.3" cy="207.3" r="4.5" fill="#24628f"></circle>
+    <line x1="87.5" y1="300" x2="87.5" y2="95.1" stroke="#24628f" stroke-width="1.8" stroke-dasharray="4 3"></line>
+    <circle cx="87.5" cy="95.1" r="4.5" fill="#24628f"></circle>
+    <line x1="154.3" y1="300" x2="154.3" y2="220.3" stroke="#24628f" stroke-width="1.8" stroke-dasharray="4 3"></line>
+    <circle cx="154.3" cy="220.3" r="4.5" fill="#24628f"></circle>
+    <line x1="313.8" y1="300" x2="313.8" y2="294.0" stroke="#24628f" stroke-width="1.8" stroke-dasharray="4 3"></line>
+    <circle cx="313.8" cy="294.0" r="4.5" fill="#24628f"></circle>
+    <text x="62.3" y="320" text-anchor="middle" fill="#24628f" font-size="13" font-family="'Fira Code', monospace">0.025</text>
+    <text x="313.8" y="320" text-anchor="middle" fill="#24628f" font-size="13" font-family="'Fira Code', monospace">0.975</text>
+    <line x1="113.2" y1="300" x2="113.2" y2="139.5" stroke="#24628f" stroke-width="2.6"></line>
+    <circle cx="113.2" cy="139.5" r="6" fill="#24628f"></circle>
+    <text x="113.2" y="320" text-anchor="middle" fill="#24628f" font-size="13" font-family="'Fira Code', monospace">0.5</text>
+    <line x1="132.1" y1="300" x2="132.1" y2="181.9" stroke="#a8670f" stroke-width="2.6" stroke-dasharray="6 4"></line>
+    <circle cx="132.1" cy="181.9" r="6" fill="#a8670f"></circle>
+    <text x="124.2" y="131.5" fill="#24628f" font-size="15" font-weight="600">median</text>
+    <text x="143.1" y="173.9" fill="#a8670f" font-size="15" font-weight="600">mean</text>
+  </g>
+  <g>
+    <text x="600" y="34" text-anchor="middle" fill="#d1861b" font-size="27" font-weight="600" font-family="'Fira Code', monospace">cdf</text>
+    <text x="600" y="62" text-anchor="middle" fill="#5b5b5b" font-size="16">probability at or below a value</text>
+    <line x1="440" y1="300" x2="752" y2="300" stroke="#c9d3da" stroke-width="2"></line>
+    <polyline points="445.0,300.0 447.1,300.0 449.3,300.0 451.4,299.9 453.6,299.7 455.7,299.2 457.9,298.2 460.0,296.9 462.1,295.0 464.3,292.7 466.4,289.9 468.6,286.8 470.7,283.2 472.9,279.4 475.0,275.3 477.1,271.0 479.3,266.6 481.4,262.0 483.6,257.4 485.7,252.7 487.9,248.0 490.0,243.3 492.1,238.7 494.3,234.1 496.4,229.6 498.6,225.1 500.7,220.8 502.9,216.5 505.0,212.4 507.1,208.3 509.3,204.4 511.4,200.5 513.6,196.8 515.7,193.2 517.9,189.8 520.0,186.4 522.1,183.1 524.3,180.0 526.4,177.0 528.6,174.1 530.7,171.2 532.9,168.5 535.0,165.9 537.1,163.4 539.3,160.9 541.4,158.6 543.6,156.3 545.7,154.2 547.9,152.1 550.0,150.1 552.1,148.1 554.3,146.3 556.4,144.5 558.6,142.8 560.7,141.1 562.9,139.5 565.0,138.0 567.1,136.5 569.3,135.1 571.4,133.7 573.6,132.4 575.7,131.1 577.9,129.9 580.0,128.7 582.1,127.6 584.3,126.5 586.4,125.5 588.6,124.5 590.7,123.5 592.9,122.6 595.0,121.7 597.1,120.8 599.3,119.9 601.4,119.1 603.6,118.4 605.7,117.6 607.9,116.9 610.0,116.2 612.1,115.5 614.3,114.9 616.4,114.2 618.6,113.6 620.7,113.1 622.9,112.5 625.0,112.0 627.1,111.4 629.3,110.9 631.4,110.4 633.6,110.0 635.7,109.5 637.9,109.1 640.0,108.7 642.1,108.3 644.3,107.9 646.4,107.5 648.6,107.1 650.7,106.8 652.9,106.4 655.0,106.1 657.1,105.8 659.3,105.4 661.4,105.1 663.6,104.8 665.7,104.6 667.9,104.3 670.0,104.0 672.1,103.8 674.3,103.5 676.4,103.3 678.6,103.1 680.7,102.8 682.9,102.6 685.0,102.4 687.1,102.2 689.3,102.0 691.4,101.8 693.6,101.6 695.7,101.4 697.9,101.3 700.0,101.1 702.1,100.9 704.3,100.8 706.4,100.6 708.6,100.5 710.7,100.3 712.9,100.2 715.0,100.1 717.1,99.9 719.3,99.8 721.4,99.7 723.6,99.5 725.7,99.4 727.9,99.3 730.0,99.2 732.1,99.1 734.3,99.0 736.4,98.9 738.6,98.8 740.7,98.7 742.9,98.6 745.0,98.5" fill="none" stroke="#d1861b" stroke-width="3" stroke-linejoin="round"></polyline>
+    <line x1="445.0" y1="146.2" x2="554.3" y2="146.2" stroke="#a8670f" stroke-width="2" stroke-dasharray="4 3"></line>
+    <line x1="554.3" y1="300" x2="554.3" y2="146.2" stroke="#a8670f" stroke-width="2" stroke-dasharray="4 3"></line>
+    <circle cx="554.3" cy="146.2" r="6" fill="#a8670f"></circle>
+    <text x="441.0" y="151.2" text-anchor="end" fill="#a8670f" font-size="13.5" font-family="'Fira Code', monospace">0.75</text>
+    <text x="554.3" y="320" text-anchor="middle" fill="#a8670f" font-size="13.5" font-family="'Fira Code', monospace">a value</text>
+  </g>
+  <g>
+    <text x="1000" y="34" text-anchor="middle" fill="#7d5ba6" font-size="27" font-weight="600" font-family="'Fira Code', monospace">pmf</text>
+    <text x="1000" y="62" text-anchor="middle" fill="#5b5b5b" font-size="16">probability of each category</text>
+    <line x1="840" y1="300" x2="1152" y2="300" stroke="#c9d3da" stroke-width="2"></line>
+    <rect x="857.0" y="273.3" width="44" height="26.7" rx="4" fill="#cbb6e6" stroke="#7d5ba6" stroke-width="2"></rect>
+    <text x="879.0" y="264.3" text-anchor="middle" fill="#5f3f88" font-size="13" font-family="'Fira Code', monospace">0.06</text>
+    <text x="879.0" y="320" text-anchor="middle" fill="#5f3f88" font-size="11.5" font-family="'Fira Code', monospace">lg dec</text>
+    <rect x="915.0" y="251.0" width="44" height="49.0" rx="4" fill="#cbb6e6" stroke="#7d5ba6" stroke-width="2"></rect>
+    <text x="937.0" y="242.0" text-anchor="middle" fill="#5f3f88" font-size="13" font-family="'Fira Code', monospace">0.11</text>
+    <text x="937.0" y="320" text-anchor="middle" fill="#5f3f88" font-size="11.5" font-family="'Fira Code', monospace">dec</text>
+    <rect x="973.0" y="179.7" width="44" height="120.3" rx="4" fill="#cbb6e6" stroke="#7d5ba6" stroke-width="2"></rect>
+    <text x="995.0" y="170.7" text-anchor="middle" fill="#5f3f88" font-size="13" font-family="'Fira Code', monospace">0.27</text>
+    <text x="995.0" y="320" text-anchor="middle" fill="#5f3f88" font-size="11.5" font-family="'Fira Code', monospace">stable</text>
+    <rect x="1031.0" y="112.8" width="44" height="187.2" rx="4" fill="#cbb6e6" stroke="#7d5ba6" stroke-width="2"></rect>
+    <text x="1053.0" y="103.8" text-anchor="middle" fill="#5f3f88" font-size="13" font-family="'Fira Code', monospace">0.42</text>
+    <text x="1053.0" y="320" text-anchor="middle" fill="#5f3f88" font-size="10" font-family="'Fira Code', monospace">increase</text>
+    <rect x="1089.0" y="237.6" width="44" height="62.4" rx="4" fill="#cbb6e6" stroke="#7d5ba6" stroke-width="2"></rect>
+    <text x="1111.0" y="228.6" text-anchor="middle" fill="#5f3f88" font-size="13" font-family="'Fira Code', monospace">0.14</text>
+    <text x="1111.0" y="320" text-anchor="middle" fill="#5f3f88" font-size="11.5" font-family="'Fira Code', monospace">lg inc</text>
+  </g>
+  <g>
+    <text x="1400" y="34" text-anchor="middle" fill="#2f9e8f" font-size="27" font-weight="600" font-family="'Fira Code', monospace">sample</text>
+    <text x="1400" y="62" text-anchor="middle" fill="#5b5b5b" font-size="16">draws from a joint distribution</text>
+    <line x1="1240" y1="300" x2="1552" y2="300" stroke="#c9d3da" stroke-width="2"></line>
+    <polyline points="1270.0,238.0 1353.3,182.9 1436.7,197.1 1520.0,150.2" fill="none" stroke="#0072B2" stroke-width="2.2" stroke-opacity="0.95" stroke-linejoin="round" stroke-linecap="round"></polyline>
+    <circle cx="1270.0" cy="238.0" r="3.4" fill="#0072B2" fill-opacity="1"></circle>
+    <circle cx="1353.3" cy="182.9" r="3.4" fill="#0072B2" fill-opacity="1"></circle>
+    <circle cx="1436.7" cy="197.1" r="3.4" fill="#0072B2" fill-opacity="1"></circle>
+    <circle cx="1520.0" cy="150.2" r="3.4" fill="#0072B2" fill-opacity="1"></circle>
+    <polyline points="1270.0,239.8 1353.3,232.8 1436.7,157.0 1520.0,136.6" fill="none" stroke="#D55E00" stroke-width="2.2" stroke-opacity="0.95" stroke-linejoin="round" stroke-linecap="round"></polyline>
+    <circle cx="1270.0" cy="239.8" r="3.4" fill="#D55E00" fill-opacity="1"></circle>
+    <circle cx="1353.3" cy="232.8" r="3.4" fill="#D55E00" fill-opacity="1"></circle>
+    <circle cx="1436.7" cy="157.0" r="3.4" fill="#D55E00" fill-opacity="1"></circle>
+    <circle cx="1520.0" cy="136.6" r="3.4" fill="#D55E00" fill-opacity="1"></circle>
+    <polyline points="1270.0,238.7 1353.3,200.2 1436.7,149.0 1520.0,134.6" fill="none" stroke="#009E73" stroke-width="2.2" stroke-opacity="0.95" stroke-linejoin="round" stroke-linecap="round"></polyline>
+    <circle cx="1270.0" cy="238.7" r="3.4" fill="#009E73" fill-opacity="1"></circle>
+    <circle cx="1353.3" cy="200.2" r="3.4" fill="#009E73" fill-opacity="1"></circle>
+    <circle cx="1436.7" cy="149.0" r="3.4" fill="#009E73" fill-opacity="1"></circle>
+    <circle cx="1520.0" cy="134.6" r="3.4" fill="#009E73" fill-opacity="1"></circle>
+    <polyline points="1270.0,235.5 1353.3,251.1 1436.7,247.3 1520.0,245.9" fill="none" stroke="#CC79A7" stroke-width="2.2" stroke-opacity="0.95" stroke-linejoin="round" stroke-linecap="round"></polyline>
+    <circle cx="1270.0" cy="235.5" r="3.4" fill="#CC79A7" fill-opacity="1"></circle>
+    <circle cx="1353.3" cy="251.1" r="3.4" fill="#CC79A7" fill-opacity="1"></circle>
+    <circle cx="1436.7" cy="247.3" r="3.4" fill="#CC79A7" fill-opacity="1"></circle>
+    <circle cx="1520.0" cy="245.9" r="3.4" fill="#CC79A7" fill-opacity="1"></circle>
+    <polyline points="1270.0,245.3 1353.3,277.9 1436.7,285.6 1520.0,277.9" fill="none" stroke="#E69F00" stroke-width="2.2" stroke-opacity="0.95" stroke-linejoin="round" stroke-linecap="round"></polyline>
+    <circle cx="1270.0" cy="245.3" r="3.4" fill="#E69F00" fill-opacity="1"></circle>
+    <circle cx="1353.3" cy="277.9" r="3.4" fill="#E69F00" fill-opacity="1"></circle>
+    <circle cx="1436.7" cy="285.6" r="3.4" fill="#E69F00" fill-opacity="1"></circle>
+    <circle cx="1520.0" cy="277.9" r="3.4" fill="#E69F00" fill-opacity="1"></circle>
+    <polyline points="1270.0,239.4 1353.3,234.2 1436.7,216.6 1520.0,243.7" fill="none" stroke="#56B4E9" stroke-width="2.2" stroke-opacity="0.95" stroke-linejoin="round" stroke-linecap="round"></polyline>
+    <circle cx="1270.0" cy="239.4" r="3.4" fill="#56B4E9" fill-opacity="1"></circle>
+    <circle cx="1353.3" cy="234.2" r="3.4" fill="#56B4E9" fill-opacity="1"></circle>
+    <circle cx="1436.7" cy="216.6" r="3.4" fill="#56B4E9" fill-opacity="1"></circle>
+    <circle cx="1520.0" cy="243.7" r="3.4" fill="#56B4E9" fill-opacity="1"></circle>
+    <polyline points="1270.0,238.9 1353.3,216.0 1436.7,176.7 1520.0,188.2" fill="none" stroke="#8C6BB1" stroke-width="2.2" stroke-opacity="0.95" stroke-linejoin="round" stroke-linecap="round"></polyline>
+    <circle cx="1270.0" cy="238.9" r="3.4" fill="#8C6BB1" fill-opacity="1"></circle>
+    <circle cx="1353.3" cy="216.0" r="3.4" fill="#8C6BB1" fill-opacity="1"></circle>
+    <circle cx="1436.7" cy="176.7" r="3.4" fill="#8C6BB1" fill-opacity="1"></circle>
+    <circle cx="1520.0" cy="188.2" r="3.4" fill="#8C6BB1" fill-opacity="1"></circle>
+    <text x="1270.0" y="320" text-anchor="middle" fill="#1f7568" font-size="12.5" font-family="'Fira Code', monospace">h=1</text>
+    <text x="1353.3" y="320" text-anchor="middle" fill="#1f7568" font-size="12.5" font-family="'Fira Code', monospace">h=2</text>
+    <text x="1436.7" y="320" text-anchor="middle" fill="#1f7568" font-size="12.5" font-family="'Fira Code', monospace">h=3</text>
+    <text x="1520.0" y="320" text-anchor="middle" fill="#1f7568" font-size="12.5" font-family="'Fira Code', monospace">h=4</text>
+  </g>
+</svg>
+<table class="hv-compact caption-top">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 31%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><code>output_type</code></th>
+<th><code>output_type_id</code></th>
+<th><code>value</code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>mean</code></td>
+<td><em>(none)</em></td>
+<td>mean of the predictive distribution</td>
+</tr>
+<tr class="even">
+<td><code>median</code></td>
+<td><em>(none)</em></td>
+<td>median of the predictive distribution</td>
+</tr>
+<tr class="odd">
+<td><code>quantile</code></td>
+<td>a probability level, e.g.&nbsp;<code>0.75</code></td>
+<td>the value at that quantile</td>
+</tr>
+<tr class="even">
+<td><code>cdf</code></td>
+<td>a possible value, e.g.&nbsp;<code>500</code></td>
+<td>P(outcome ≤ 500)</td>
+</tr>
+<tr class="odd">
+<td><code>pmf</code></td>
+<td>a possible category, e.g.&nbsp;<code>"increase"</code></td>
+<td>P(outcome = <code>"increase"</code>)</td>
+</tr>
+<tr class="even">
+<td><code>sample</code></td>
+<td>a sample index, e.g.&nbsp;<code>"s3"</code></td>
+<td>one draw from the distribution</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>The hubverse currently supports six output types, and these four panels cover all of them.</p>
+<p>We accept the standard point estimates, <code>mean</code> and <code>median</code>. One number per prediction.</p>
+<p>The most common output type hubs request, though, is <code>quantile</code>. The hub defines the probability levels it wants, and teams submit the predicted value at each one.</p>
+<p><code>cdf</code> is the reverse. For each value the hub defines, teams submit the probability of landing at or below it. Useful when the question is about a threshold.</p>
+<p><code>pmf</code> is for categorical targets. A probability on each category, summing to one.</p>
+<p><code>sample</code> is a collection of draws from the predictive distribution.</p>
+<p>Hubs can also ask for samples drawn from a <strong>joint distribution</strong>, which means values for multiple modeling tasks drawn at once, as a coherent set. Trajectories are the common example: a single draw across all horizons at once. That’s what the panel shows, with each coloured line being one sample.</p>
+<p>The table below has all six, with what <code>output_type_id</code> means for each. That shifting meaning is what lets very different predictions live in one format.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="and-how-a-hub-configures-them" class="slide level2">
+<h2>🎛️ …and how a hub configures them</h2>
+<div class="sourceCode" id="cb6" data-code-line-numbers="|3-5|6|7|10-14"><pre class="sourceCode numberSource json number-lines code-with-copy"><code class="sourceCode json"><span id="cb6-1"><a href=""></a><span class="er">"output_type":</span> <span class="fu">{</span></span>
+<span id="cb6-2"><a href=""></a>  <span class="dt">"quantile"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb6-3"><a href=""></a>    <span class="dt">"output_type_id"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb6-4"><a href=""></a>      <span class="dt">"required"</span><span class="fu">:</span> <span class="ot">[</span><span class="dv">0</span><span class="er">.01</span><span class="ot">,</span> <span class="dv">0</span><span class="er">.025</span><span class="ot">,</span> <span class="st">"..."</span><span class="ot">,</span> <span class="dv">0</span><span class="er">.</span><span class="dv">975</span><span class="ot">,</span> <span class="dv">0</span><span class="er">.</span><span class="dv">99</span><span class="ot">]</span></span>
+<span id="cb6-5"><a href=""></a>    <span class="fu">},</span></span>
+<span id="cb6-6"><a href=""></a>    <span class="dt">"is_required"</span><span class="fu">:</span> <span class="kw">true</span><span class="fu">,</span></span>
+<span id="cb6-7"><a href=""></a>    <span class="dt">"value"</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"double"</span><span class="fu">,</span> <span class="dt">"minimum"</span><span class="fu">:</span> <span class="dv">0</span> <span class="fu">}</span></span>
+<span id="cb6-8"><a href=""></a>  <span class="fu">},</span></span>
+<span id="cb6-9"><a href=""></a>  <span class="dt">"sample"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb6-10"><a href=""></a>    <span class="dt">"output_type_id_params"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb6-11"><a href=""></a>      <span class="dt">"min_samples_per_task"</span><span class="fu">:</span> <span class="dv">100</span><span class="fu">,</span></span>
+<span id="cb6-12"><a href=""></a>      <span class="dt">"max_samples_per_task"</span><span class="fu">:</span> <span class="dv">100</span><span class="fu">,</span></span>
+<span id="cb6-13"><a href=""></a>      <span class="dt">"compound_taskid_set"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"reference_date"</span><span class="ot">,</span> <span class="st">"location"</span><span class="ot">,</span> <span class="st">"target"</span><span class="ot">]</span></span>
+<span id="cb6-14"><a href=""></a>    <span class="fu">},</span></span>
+<span id="cb6-15"><a href=""></a>    <span class="dt">"is_required"</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></span>
+<span id="cb6-16"><a href=""></a>    <span class="dt">"value"</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"integer"</span><span class="fu">,</span> <span class="dt">"minimum"</span><span class="fu">:</span> <span class="dv">0</span> <span class="fu">}</span></span>
+<span id="cb6-17"><a href=""></a>  <span class="fu">}</span></span>
+<span id="cb6-18"><a href=""></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<aside class="notes">
+<p>So that’s what output types are. Here’s how a hub actually configure them.</p>
+<p><code>output_type_id.required</code> is where a hub configures which output type IDs it wants submitted. For quantiles, that’s the probability levels. FluSight lists 23, from the 1st percentile to the 99th.</p>
+<p>Notice there’s no optional property here. Unlike task IDs, output type IDs are all required becaue a partial set breaks things downstream eg when evaluating or ensembling.</p>
+<p><code>is_required</code> defines whether the output type itself is required within the model task. Quantiles are required for FluSight.</p>
+<p>Finally <code>value</code> constrains the predicted value. For flusight Type must be double and minimum zero, so no negative counts.</p>
+<p>Samples have a slightly differnt config block: - <code>compound_taskid_set</code> is what declares the joint distribution. It lists the task IDs held constant within a group, so everything else, here horizon, is sampled jointly. In flusight it’s effectively configuring a trajectory. - The hub also configures the min and max number of samples required, here both are 100 so the hub expects exactly 100 samples per compound task.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="configured-model-output-in-the-wild" class="slide level2">
+<h2>🔍 Configured model output in the wild</h2>
+<p>Real FluSight rows from round <code>2026-01-10</code>, national. <span class="hv-mo-key"><span class="hv-mo-key"><span class="tid">task IDs</span> · <span class="ot">output type</span> · <span class="val">value</span></span></span></p>
+<hr class="hv-rule">
+<pre class="hv-mo"><span class="tid b">reference_date</span>  <span class="tid b">horizon</span>  <span class="tid b">target                 </span>  <span class="tid b">target_end_date</span>  <span class="tid b">location</span>  <span class="ot b">output_type</span>  <span class="ot b">output_type_id</span>  <span class="val b">value</span>
+<span class="fragment hv-hl" data-fragment-index="1"><span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk inc flu hosp        </span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">quantile   </span>  <span class="ot">0.01          </span>  <span class="val">18429</span>
+<span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk inc flu hosp        </span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">quantile   </span>  <span class="ot">0.025         </span>  <span class="val">20177</span>
+<span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk inc flu hosp        </span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">quantile   </span>  <span class="ot">0.05          </span>  <span class="val">21981</span>
+                                                                                          <span class="ann">…             </span>  <span class="ann">     </span>
+<span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk inc flu hosp        </span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">quantile   </span>  <span class="ot">0.5           </span>  <span class="val">38936</span>
+                                                                                          <span class="ann">…             </span>  <span class="ann">     </span>
+<span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk inc flu hosp        </span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">quantile   </span>  <span class="ot">0.975         </span>  <span class="val">61292</span>
+<span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk inc flu hosp        </span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">quantile   </span>  <span class="ot">0.99          </span>  <span class="val">68125</span></span>
+<span class="fragment hv-hl" data-fragment-index="2"><span class="tid">2026-01-10    </span>  <span class="tid">0      </span>  <span class="tid">wk inc flu hosp        </span>  <span class="tid">2026-01-10     </span>  <span class="tid">US      </span>  <span class="ot">sample     </span>  <span class="ot">us_s1         </span>  <span class="val">36268</span>
+<span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk inc flu hosp        </span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">sample     </span>  <span class="ot">us_s1         </span>  <span class="val">36397</span>
+<span class="tid">2026-01-10    </span>  <span class="tid">2      </span>  <span class="tid">wk inc flu hosp        </span>  <span class="tid">2026-01-24     </span>  <span class="tid">US      </span>  <span class="ot">sample     </span>  <span class="ot">us_s1         </span>  <span class="val">33669</span>
+<span class="tid">2026-01-10    </span>  <span class="tid">3      </span>  <span class="tid">wk inc flu hosp        </span>  <span class="tid">2026-01-31     </span>  <span class="tid">US      </span>  <span class="ot">sample     </span>  <span class="ot">us_s1         </span>  <span class="val">33727</span></span>
+<span class="fragment hv-hl" data-fragment-index="3"><span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk flu hosp rate change</span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">pmf        </span>  <span class="ot">large_decrease</span>  <span class="val">0.114</span>
+<span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk flu hosp rate change</span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">pmf        </span>  <span class="ot">decrease      </span>  <span class="val">0.244</span>
+<span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk flu hosp rate change</span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">pmf        </span>  <span class="ot">stable        </span>  <span class="val">0.158</span>
+<span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk flu hosp rate change</span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">pmf        </span>  <span class="ot">increase      </span>  <span class="val">0.231</span>
+<span class="tid">2026-01-10    </span>  <span class="tid">1      </span>  <span class="tid">wk flu hosp rate change</span>  <span class="tid">2026-01-17     </span>  <span class="tid">US      </span>  <span class="ot">pmf        </span>  <span class="ot">large_increase</span>  <span class="val">0.253</span></span></pre>
+<aside class="notes">
+<p>So let’s look at how all that configuration gets translated into actual model output files.</p>
+<ul>
+<li>On the left in blue are the <strong>task IDs</strong></li>
+<li>In the middle, <code>output_type</code> and <code>output_type_id</code></li>
+<li>And on the right, the predicted value.</li>
+</ul>
+<p>Let’s see some flusight output types:</p>
+<p><em>(1)</em> First, the required <strong>quantile</strong> output type for the hospitalisation count target. Here you can see the output type IDs represent qunatile levels.</p>
+<p><em>(2)</em> Next a single <strong>sample</strong> representing a single draw of a trajectory, for that same target. Here <code>output_type_id</code> represents the sample index and the values of all task IDs stays constant apart from <code>horizon</code>.</p>
+<p><em>(3)</em> Finally the <strong>pmf</strong> output type for a categorical rate-change outlook for a completely different target. Here output types are categories and the values are propabilities that sum to one across individual predictions.</p>
+<p>Three very different statistical objects. Same eight columns.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hubs-collect-metadata-about-the-models-too" class="slide level2">
+<h2>🏷️ Hubs collect metadata about the models too</h2>
+<div class="columns">
+<div class="column" style="width:46%;">
+<p><code>model-metadata-schema.json</code> sets out what each team must document about their model</p>
+<ul>
+<li>Deliberately <strong>looser</strong> than <code>tasks.json</code>: the hubverse ships a template, hubs adapt it</li>
+<li>One file per model in <code>model-metadata/</code>, validated on every PR</li>
+</ul>
+<div class="callout callout-tip no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Provenance for every prediction, and a natural basis for <strong>model cards</strong>.</p>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:54%;">
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href=""></a><span class="fu">team_name</span><span class="kw">:</span><span class="at"> </span><span class="st">"UMass-Amherst"</span></span>
+<span id="cb7-2"><a href=""></a><span class="fu">model_abbr</span><span class="kw">:</span><span class="at"> </span><span class="st">"flusion"</span></span>
+<span id="cb7-3"><a href=""></a><span class="fu">model_version</span><span class="kw">:</span><span class="at"> </span><span class="st">"1.1"</span></span>
+<span id="cb7-4"><a href=""></a><span class="fu">model_contributors</span><span class="kw">:</span></span>
+<span id="cb7-5"><a href=""></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> </span><span class="st">"Evan Ray"</span></span>
+<span id="cb7-6"><a href=""></a><span class="at">    </span><span class="fu">affiliation</span><span class="kw">:</span><span class="at"> </span><span class="st">"UMass Amherst"</span></span>
+<span id="cb7-7"><a href=""></a><span class="fu">license</span><span class="kw">:</span><span class="at"> </span><span class="st">"CC-BY-4.0"</span></span>
+<span id="cb7-8"><a href=""></a><span class="fu">data_inputs</span><span class="kw">:</span><span class="at"> </span><span class="st">"NHSN, FluSurv-NET and ILINet."</span></span>
+<span id="cb7-9"><a href=""></a><span class="fu">methods</span><span class="kw">:</span><span class="at"> </span><span class="st">"Ensemble of statistical and machine</span></span>
+<span id="cb7-10"><a href=""></a><span class="st">  learning time series models."</span></span>
+<span id="cb7-11"><a href=""></a><span class="fu">designated_model</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<aside class="notes">
+<p>I just wanted to quickly mention that hubs also collect information from submitting teams about their models.</p>
+<p>Admins set out what teams have to document as a schema and that’s used to validate the metadata files submitted by teams. We ship a template of this schema and hubs are currently free to adapt it.</p>
+<p>Looking ahead, there’s a lot of interest supporting model cards for epidemic models so these files form a natural basis.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="beyond-the-data-standard" class="title-slide slide level1 inverse center" data-background-color="black">
+<h1>Beyond the data standard</h1>
+<aside class="notes">
+<p>That’s the standard, and how you configure it. Everything from here is what we build on top of it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="automating-everything-we-can" class="slide level2">
+<h2>🔁 Automating everything we can</h2>
+<p><strong>GitHub Actions do the operational work:</strong></p>
+<ul>
+<li>✅ PR-level <strong>model output validation</strong>, reported back on the pull request</li>
+<li>✅ <strong>Hub configuration</strong> validation</li>
+<li>☁️ <strong>Cloud</strong> hub data syncing</li>
+<li>📊 <strong>Dashboard data</strong> + evaluation regeneration</li>
+</ul>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>All actions live in <a href="https://github.com/hubverse-org/hubverse-actions"><strong><code>hubverse-actions</code></strong></a> and install with <code>hubCI::use_hub_github_action()</code></p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Automation is a cornerstone of hub operational work and we provide GitHub Actions templates for common workflows.</p>
+<p>This includes workflows for: - Validating model output or on every pull request. - Validating hub config whenever <code>hub-config</code> changes. - Syncing validated output to the cloud. - Regenerating dashboard data and evaluation metrics on every update.</p>
+<p>They all live in the <code>hubverse-actions</code> repo, and admins install them unig the hubCI package.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="cloud-storage-and-access" class="slide level2">
+<h2>☁️ Cloud storage and access</h2>
+<p><strong>Validated hub data is mirrored to a public S3 bucket</strong></p>
+<ul>
+<li>Opened directly as an <strong>Arrow dataset</strong>: no cloning, no full download</li>
+<li><strong>Query-able</strong> via 📦 <code>hubData</code> (R) and 📦 <code>hubdata</code> (Python)</li>
+<li>Turns a hub into an <strong>open data resource</strong>, not just a repository</li>
+</ul>
+<div class="callout callout-tip no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Enable it with a few lines in <code>admin.json</code>. The hubverse provisions the bucket.</p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>Alongside the GitHub repo, validated hub data can also be configured to be mirrored to a public S3 bucket which we currently provision and maintain.</p>
+<p>The mirror is synced as a parquet Arrow dataset which can be queried and filtered remotely before downloading data, in both R and Python, using the hubData packages. No cloning, nor downloading a full hub’s worth of data required.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -753,22 +1395,24 @@ Everything else <strong>builds on that foundation.</strong></p>
 </section>
 <section id="dashboards-communication" class="slide level2">
 <h2>📊 Dashboards &amp; communication</h2>
+<div class="columns">
+<div class="column" style="width:42%;">
 <ul>
 <li>Built with <a href="https://quarto.org"><strong>Quarto</strong></a> so easily customisable via Quarto configuration</li>
-<li>Deployed as a <strong>fully static site</strong> , no backend required</li>
+<li>Deployed as a <strong>fully static site</strong>, no backend required</li>
 <li>Powered by JSON data prepared via GitHub workflows</li>
 <li>Interactive UI built with client-side JavaScript (fast!)</li>
-<li>New instances can be set up by copying/configuring the <a href="https://github.com/hubverse-org/hub-dashboard-template"><code>hub-dashboard-template</code></a></li>
+<li>New instances set up by copying/configuring the <a href="https://github.com/hubverse-org/hub-dashboard-template"><code>hub-dashboard-template</code></a></li>
 </ul>
+</div><div class="column" style="width:58%;">
+<p><a href="assets/images/dashboard-landing.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="assets/images/dashboard-landing.png" alt="Screenshot of the FluSight Forecast Hub Dashboard introduction page, with Introduction, Forecasts and Evaluation tabs"></a></p>
+</div>
+</div>
 <aside class="notes">
-<p><strong>Dashboards are crucial for communicating</strong> model outputs to a broader audience, including <strong>policy makers, public health officials, and even the general public</strong> so we put effort into developing a plug and play dashboard template.</p>
-<ul>
-<li><p>Our template is built in <strong>Quarto</strong>, so it’s easy to customise and extend.</p></li>
-<li><p>What makes it powerful is that it’s <strong>fully static</strong>, no backend needed.<br>
-JSON data are generated from hub data by <strong>GitHub workflows</strong>, and the JavaScript frontend fetches this data to create a dynamic, interactive experience for the user.</p></li>
-</ul>
-<p>This design makes it <strong>fast</strong>, <strong>easy to host</strong> (e.g.&nbsp;on GitHub Pages), and <strong>simple to replicate</strong>.</p>
-<p>Hub admins can <strong>launch new dashboards quickly</strong> by <strong>copying</strong> and <strong>configuring</strong> the <a href="https://github.com/hubverse-org/hub-dashboard-template"><code>hub-dashboard-template</code></a>.</p>
+<p>Because dashboards matter for communicating with a wider audience, we developed and support a plug-and-play template that admins can just copy and configure.</p>
+<p>It’s based on Quarto, so it’s easy to customise.</p>
+<p>The powerful bit is that it’s fully static. No backend. GitHub workflows turn hub data into JSON, and a JavaScript frontend makes it interactive.</p>
+<p>So it’s fast, free to host on GitHub Pages, and simple to replicate which matters for resource-constrained users.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -781,90 +1425,225 @@ JSON data are generated from hub data by <strong>GitHub workflows</strong>, and 
           display:block!important;
       }</style></aside>
 </section>
-<section id="cloud-hub-storage-and-access" class="slide level2">
-<h2>☁️ Cloud hub storage and access</h2>
-<ul>
-<li>Hubs <strong>mirrored to public AWS S3 buckets</strong></li>
-<li>Multi-file data can be <strong>opened as Arrow datasets</strong></li>
-<li>Enables <strong>query-able data access</strong> via R 📦 <code>hubData</code> and Python 📦 <code>hubdata</code>.</li>
-</ul>
+<section id="hubverse-roles-and-the-their-tooling" class="slide level2">
+<h2>👥 Hubverse roles and the their tooling</h2>
+<svg class="hv-roles" viewbox="0 0 1600 940" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hv-roles-title hv-roles-desc">
+  <title id="hv-roles-title">Which hubverse tools serve which role</title>
+  <desc id="hv-roles-desc">A hub sits at the centre. Around it are four roles: hub administrators who
+    configure it, modelers who submit model output, analysts who build ensembles, visualisations and
+    evaluations, and stakeholders who consume the results. A panel on the right fills in the hubverse
+    tools each role uses.</desc>
+
+  <defs>
+    <symbol id="hv-person" viewbox="0 0 24 24">
+      <circle cx="12" cy="7" r="4.3"></circle>
+      <path d="M2.6 22.5c0-5.2 4.2-9.4 9.4-9.4s9.4 4.2 9.4 9.4z"></path>
+    </symbol>
+    <marker id="hv-arrow-amber" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#d1861b"></path>
+    </marker>
+    <marker id="hv-arrow-blue" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#3b88bf"></path>
+    </marker>
+    <marker id="hv-arrow-purple" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7d5ba6"></path>
+    </marker>
+    <marker id="hv-arrow-teal" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f9e8f"></path>
+    </marker>
+  </defs>
+
+  <!-- ================= BASE: the hub, and the empty toolbox ================= -->
+  <g>
+    <rect x="370" y="150" width="540" height="282" rx="18" fill="#ffffff" stroke="#3b88bf" stroke-width="2.5"></rect>
+    <path d="M370 168 a18 18 0 0 1 18-18 h504 a18 18 0 0 1 18 18 v37 h-540 z" fill="#3b88bf"></path>
+    <text x="640" y="190" text-anchor="middle" fill="#ffffff" font-size="23" font-weight="600">The hub</text>
+
+    <!-- the toolbox, empty to begin with -->
+    <rect x="1010" y="20" width="570" height="880" rx="18" fill="#f7fafc" stroke="#3b88bf" stroke-width="2.5" stroke-dasharray="7 5"></rect>
+    <text x="1295" y="64" text-anchor="middle" fill="#3b88bf" font-size="27" font-weight="600">the hubverse</text>
+    <text x="1295" y="92" text-anchor="middle" fill="#5b5b5b" font-size="14">one toolbox, every hub draws from it</text>
+  </g>
+
+  <!-- ========================= 1. HUB ADMINISTRATOR ========================= -->
+  <g class="fragment" data-fragment-index="1">
+    <!-- hub-config/: a small stack of schema-checked config files -->
+    <rect x="390" y="222" width="160" height="190" rx="12" fill="#eaf3fa" stroke="#3b88bf" stroke-width="1.6"></rect>
+    <text x="470" y="250" text-anchor="middle" fill="#24628f" font-size="14" font-weight="600" font-family="'Fira Code', monospace">hub-config/</text>
+    <g font-family="'Fira Code', monospace" font-size="13" fill="#24628f" text-anchor="middle">
+      <rect x="418" y="264" width="104" height="26" rx="5" fill="#ffffff" stroke="#3b88bf" stroke-width="1.3"></rect>
+      <text x="470" y="282">{ }</text>
+      <rect x="418" y="296" width="104" height="26" rx="5" fill="#ffffff" stroke="#3b88bf" stroke-width="1.3"></rect>
+      <text x="470" y="314">{ }</text>
+      <rect x="418" y="328" width="104" height="26" rx="5" fill="#ffffff" stroke="#3b88bf" stroke-width="1.3"></rect>
+      <text x="470" y="346">{ }</text>
+    </g>
+    <text x="470" y="382" text-anchor="middle" fill="#5b5b5b" font-size="12.5">what to predict,</text>
+    <text x="470" y="400" text-anchor="middle" fill="#5b5b5b" font-size="12.5">and in what form</text>
+
+    <!-- target-data/: what actually happened -->
+    <rect x="745" y="222" width="145" height="190" rx="12" fill="#e8f6f4" stroke="#2f9e8f" stroke-width="1.6"></rect>
+    <text x="817" y="250" text-anchor="middle" fill="#1f7568" font-size="13.5" font-weight="600" font-family="'Fira Code', monospace">target-data/</text>
+    <polyline points="759,348 779,338 799,300 819,270 839,296 859,332 879,346" fill="none" stroke="#2f9e8f" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"></polyline>
+    <text x="817" y="382" text-anchor="middle" fill="#5b5b5b" font-size="12.5">what actually</text>
+    <text x="817" y="400" text-anchor="middle" fill="#5b5b5b" font-size="12.5">happened</text>
+
+    <rect x="500" y="18" width="280" height="76" rx="14" fill="#eaf3fa" stroke="#3b88bf" stroke-width="2.5"></rect>
+    <use href="#hv-person" x="522" y="38" width="36" height="36" fill="#3b88bf"></use>
+    <text x="574" y="52" fill="#24628f" font-size="20" font-weight="600">Hub administrator</text>
+    <text x="574" y="76" fill="#5b5b5b" font-size="13.5">designs and runs the hub</text>
+    <path d="M640 96 L640 146" stroke="#3b88bf" stroke-width="2.6" fill="none" marker-end="url(#hv-arrow-blue)"></path>
+    <path d="M1004 291 L 916 291" stroke="#3b88bf" stroke-width="2.6" fill="none" marker-end="url(#hv-arrow-blue)"></path>
+
+    <text x="1035" y="140" fill="#24628f" font-size="16" font-weight="600">FOR ADMINISTRATORS</text>
+    <line x1="1215" y1="134" x2="1555" y2="134" stroke="#b7d5ea" stroke-width="1.6"></line>
+
+    <rect x="1035" y="152" width="250" height="66" rx="10" fill="#ffffff" stroke="#3b88bf" stroke-width="1.6"></rect>
+    <rect x="1035" y="152" width="7" height="66" rx="3" fill="#3b88bf"></rect>
+    <text x="1055" y="180" fill="#24628f" font-size="16" font-weight="600" font-family="'Fira Code', monospace">hubAdmin</text>
+    <text x="1055" y="202" fill="#5b5b5b" font-size="12.5">build &amp; validate configs</text>
+
+    <rect x="1305" y="152" width="250" height="66" rx="10" fill="#ffffff" stroke="#3b88bf" stroke-width="1.6"></rect>
+    <rect x="1305" y="152" width="7" height="66" rx="3" fill="#3b88bf"></rect>
+    <text x="1325" y="180" fill="#24628f" font-size="16" font-weight="600" font-family="'Fira Code', monospace">schemas · hubDocs</text>
+    <text x="1325" y="202" fill="#5b5b5b" font-size="12.5">the spec, and how to use it</text>
+
+    <rect x="1035" y="228" width="250" height="66" rx="10" fill="#ffffff" stroke="#3b88bf" stroke-width="1.6"></rect>
+    <rect x="1035" y="228" width="7" height="66" rx="3" fill="#3b88bf"></rect>
+    <text x="1055" y="256" fill="#24628f" font-size="16" font-weight="600" font-family="'Fira Code', monospace">hubCI</text>
+    <text x="1055" y="278" fill="#5b5b5b" font-size="12.5">install GitHub Actions</text>
+
+    <rect x="1305" y="228" width="250" height="66" rx="10" fill="#ffffff" stroke="#3b88bf" stroke-width="1.6"></rect>
+    <rect x="1305" y="228" width="7" height="66" rx="3" fill="#3b88bf"></rect>
+    <text x="1325" y="256" fill="#24628f" font-size="16" font-weight="600" font-family="'Fira Code', monospace">hubValidations</text>
+    <text x="1325" y="278" fill="#5b5b5b" font-size="12.5">customise validation</text>
+  </g>
+
+  <!-- ============================== 2. MODELERS ============================= -->
+  <g class="fragment" data-fragment-index="2">
+    <!-- model-output/: one band per submitting team -->
+    <rect x="560" y="222" width="175" height="190" rx="12" fill="#fdf9f1" stroke="#d1861b" stroke-width="1.6"></rect>
+    <text x="647" y="250" text-anchor="middle" fill="#a8670f" font-size="14" font-weight="600" font-family="'Fira Code', monospace">model-output/</text>
+    <rect x="578" y="264" width="139" height="24" rx="5" fill="#f8e3ae" stroke="#d1861b" stroke-width="1.2"></rect>
+    <rect x="578" y="293" width="139" height="24" rx="5" fill="#f2cd85" stroke="#d1861b" stroke-width="1.2"></rect>
+    <rect x="578" y="322" width="139" height="24" rx="5" fill="#ebb65e" stroke="#d1861b" stroke-width="1.2"></rect>
+    <rect x="578" y="351" width="139" height="24" rx="5" fill="#e39f38" stroke="#d1861b" stroke-width="1.2"></rect>
+    <text x="647" y="400" text-anchor="middle" fill="#5b5b5b" font-size="12.5">one folder per model</text>
+
+    <rect x="20" y="180" width="190" height="76" rx="14" fill="#fdf3e2" stroke="#d1861b" stroke-width="2.5"></rect>
+    <use href="#hv-person" x="40" y="200" width="34" height="34" fill="#d1861b"></use>
+    <text x="88" y="216" fill="#a8670f" font-size="19" font-weight="600">Modeler</text>
+    <text x="88" y="238" fill="#5b5b5b" font-size="12.5">mechanistic</text>
+
+    <rect x="20" y="268" width="190" height="76" rx="14" fill="#fdf3e2" stroke="#d1861b" stroke-width="2.5"></rect>
+    <use href="#hv-person" x="40" y="288" width="34" height="34" fill="#d1861b"></use>
+    <text x="88" y="304" fill="#a8670f" font-size="19" font-weight="600">Modeler</text>
+    <text x="88" y="326" fill="#5b5b5b" font-size="12.5">statistical</text>
+
+    <rect x="20" y="356" width="190" height="76" rx="14" fill="#fdf3e2" stroke="#d1861b" stroke-width="2.5"></rect>
+    <use href="#hv-person" x="40" y="376" width="34" height="34" fill="#d1861b"></use>
+    <text x="88" y="392" fill="#a8670f" font-size="19" font-weight="600">Modeler</text>
+    <text x="88" y="414" fill="#5b5b5b" font-size="12.5">machine learning</text>
+
+    <path d="M214 218 C 290 218, 300 255, 364 255" fill="none" stroke="#d1861b" stroke-width="2.6" marker-end="url(#hv-arrow-amber)"></path>
+    <path d="M214 306 C 290 306, 300 291, 364 291" fill="none" stroke="#d1861b" stroke-width="2.6" marker-end="url(#hv-arrow-amber)"></path>
+    <path d="M214 394 C 290 394, 300 327, 364 327" fill="none" stroke="#d1861b" stroke-width="2.6" marker-end="url(#hv-arrow-amber)"></path>
+
+    <text x="288" y="140" text-anchor="middle" fill="#a8670f" font-size="16" font-weight="600">model output</text>
+    <text x="288" y="162" text-anchor="middle" fill="#5b5b5b" font-size="13">in the hub standard</text>
+
+    <text x="1035" y="340" fill="#a8670f" font-size="16" font-weight="600">FOR MODELERS</text>
+    <line x1="1178" y1="334" x2="1555" y2="334" stroke="#eccfa4" stroke-width="1.6"></line>
+
+    <rect x="1035" y="352" width="250" height="66" rx="10" fill="#ffffff" stroke="#d1861b" stroke-width="1.6"></rect>
+    <rect x="1035" y="352" width="7" height="66" rx="3" fill="#d1861b"></rect>
+    <text x="1055" y="380" fill="#a8670f" font-size="16" font-weight="600" font-family="'Fira Code', monospace">hubValidations</text>
+    <text x="1055" y="402" fill="#5b5b5b" font-size="12.5">check before you submit</text>
+
+    <rect x="1305" y="352" width="250" height="66" rx="10" fill="#ffffff" stroke="#d1861b" stroke-width="1.6"></rect>
+    <rect x="1305" y="352" width="7" height="66" rx="3" fill="#d1861b"></rect>
+    <text x="1325" y="380" fill="#a8670f" font-size="16" font-weight="600" font-family="'Fira Code', monospace">hubData</text>
+    <text x="1325" y="402" fill="#5b5b5b" font-size="12.5">read the whole hub (R / Py)</text>
+  </g>
+
+  <!-- =============================== 3. ANALYST ============================= -->
+  <g class="fragment" data-fragment-index="3">
+    <path d="M640 434 L640 512" stroke="#7d5ba6" stroke-width="2.6" fill="none" marker-end="url(#hv-arrow-purple)"></path>
+    <text x="668" y="452" fill="#7d5ba6" font-size="15" font-weight="600">secondary analyses</text>
+    <text x="668" y="474" fill="#5b5b5b" font-size="13.5">ensembles · visualisations · evaluations</text>
+
+    <rect x="490" y="516" width="300" height="80" rx="14" fill="#f2edf8" stroke="#7d5ba6" stroke-width="2.5"></rect>
+    <use href="#hv-person" x="512" y="538" width="34" height="34" fill="#7d5ba6"></use>
+    <text x="560" y="554" fill="#5f3f88" font-size="19" font-weight="600">Analyst</text>
+    <text x="560" y="576" fill="#5b5b5b" font-size="12.5">works across all the models at once</text>
+
+    <text x="1035" y="464" fill="#5f3f88" font-size="16" font-weight="600">FOR ANALYSTS</text>
+    <line x1="1168" y1="458" x2="1555" y2="458" stroke="#cbb6e6" stroke-width="1.6"></line>
+
+    <rect x="1035" y="476" width="250" height="66" rx="10" fill="#ffffff" stroke="#7d5ba6" stroke-width="1.6"></rect>
+    <rect x="1035" y="476" width="7" height="66" rx="3" fill="#7d5ba6"></rect>
+    <text x="1055" y="504" fill="#5f3f88" font-size="16" font-weight="600" font-family="'Fira Code', monospace">hubData</text>
+    <text x="1055" y="526" fill="#5b5b5b" font-size="12.5">query without cloning</text>
+
+    <rect x="1305" y="476" width="250" height="66" rx="10" fill="#ffffff" stroke="#7d5ba6" stroke-width="1.6"></rect>
+    <rect x="1305" y="476" width="7" height="66" rx="3" fill="#7d5ba6"></rect>
+    <text x="1325" y="504" fill="#5f3f88" font-size="16" font-weight="600" font-family="'Fira Code', monospace">hubVis</text>
+    <text x="1325" y="526" fill="#5b5b5b" font-size="12.5">plot model output</text>
+
+    <rect x="1035" y="552" width="250" height="66" rx="10" fill="#ffffff" stroke="#7d5ba6" stroke-width="1.6"></rect>
+    <rect x="1035" y="552" width="7" height="66" rx="3" fill="#7d5ba6"></rect>
+    <text x="1055" y="580" fill="#5f3f88" font-size="16" font-weight="600" font-family="'Fira Code', monospace">hubEnsembles</text>
+    <text x="1055" y="602" fill="#5b5b5b" font-size="12.5">combine models</text>
+
+    <rect x="1305" y="552" width="250" height="66" rx="10" fill="#ffffff" stroke="#7d5ba6" stroke-width="1.6"></rect>
+    <rect x="1305" y="552" width="7" height="66" rx="3" fill="#7d5ba6"></rect>
+    <text x="1325" y="580" fill="#5f3f88" font-size="16" font-weight="600" font-family="'Fira Code', monospace">hubEvals</text>
+    <text x="1325" y="602" fill="#5b5b5b" font-size="12.5">score against target data</text>
+  </g>
+
+  <!-- ============================ 4. STAKEHOLDERS =========================== -->
+  <g class="fragment" data-fragment-index="4">
+    <path d="M640 598 L640 706" stroke="#2f9e8f" stroke-width="2.6" fill="none" marker-end="url(#hv-arrow-teal)"></path>
+    <text x="668" y="634" fill="#1f7568" font-size="15" font-weight="600">hub output</text>
+    <text x="668" y="656" fill="#5b5b5b" font-size="13.5">dashboards · reports · briefings</text>
+
+    <rect x="460" y="710" width="360" height="92" rx="14" fill="#e8f6f4" stroke="#2f9e8f" stroke-width="2.5"></rect>
+    <use href="#hv-person" x="484" y="732" width="32" height="32" fill="#2f9e8f"></use>
+    <use href="#hv-person" x="516" y="732" width="32" height="32" fill="#2f9e8f"></use>
+    <use href="#hv-person" x="548" y="732" width="32" height="32" fill="#2f9e8f"></use>
+    <text x="596" y="754" fill="#1f7568" font-size="19" font-weight="600">Stakeholders</text>
+    <text x="596" y="778" fill="#5b5b5b" font-size="12.5">public health decision-makers</text>
+
+    <text x="1035" y="664" fill="#1f7568" font-size="16" font-weight="600">FOR STAKEHOLDERS</text>
+    <line x1="1213" y1="658" x2="1555" y2="658" stroke="#a9ddd5" stroke-width="1.6"></line>
+
+    <rect x="1035" y="676" width="250" height="66" rx="10" fill="#ffffff" stroke="#2f9e8f" stroke-width="1.6"></rect>
+    <rect x="1035" y="676" width="7" height="66" rx="3" fill="#2f9e8f"></rect>
+    <text x="1055" y="704" fill="#1f7568" font-size="14.5" font-weight="600" font-family="'Fira Code', monospace">dashboard template</text>
+    <text x="1055" y="726" fill="#5b5b5b" font-size="12.5">static, no backend</text>
+
+    <rect x="1305" y="676" width="250" height="66" rx="10" fill="#ffffff" stroke="#2f9e8f" stroke-width="1.6"></rect>
+    <rect x="1305" y="676" width="7" height="66" rx="3" fill="#2f9e8f"></rect>
+    <text x="1325" y="704" fill="#1f7568" font-size="14.5" font-weight="600" font-family="'Fira Code', monospace">cloud mirror</text>
+    <text x="1325" y="726" fill="#5b5b5b" font-size="12.5">public S3, open data</text>
+  </g>
+
+  <!-- ============================= 5. DEVELOPERS ============================ -->
+  <g class="fragment" data-fragment-index="5">
+    <line x1="1035" y1="790" x2="1555" y2="790" stroke="#cfd8de" stroke-width="1.6"></line>
+    <rect x="1035" y="808" width="520" height="76" rx="12" fill="#f0f0f0" stroke="#8a8a8a" stroke-width="1.8"></rect>
+    <use href="#hv-person" x="1058" y="828" width="34" height="34" fill="#5b5b5b"></use>
+    <text x="1106" y="843" fill="#3f3f3f" font-size="18" font-weight="600">Hubverse developers &amp; community</text>
+    <text x="1106" y="866" fill="#5b5b5b" font-size="13">build the tools · docs · schemas · outreach, openly and in the open</text>
+  </g>
+</svg>
 <aside class="notes">
-<p>As a bonus, we’ve developed infrastructure to mirror validated hub data to <strong>AWS S3 buckets</strong>, making it publicly accessible as <strong>Arrow datasets</strong>.</p>
-<p>This <strong>enables downstream users</strong>, especially <strong>analysts</strong>, to <strong>query the data</strong> without needing to clone the full repository.</p>
-<p><br>
-They can <strong>access</strong> it via the <strong>R</strong> or <strong>python equivalent package</strong> <code>hubdata</code>.</p>
-<p>This <strong>cloud mirroring</strong> service is something the <strong>hubverse currently provides</strong>.<br>
-To enable it for a new hub:</p>
-<ul>
-<li><p>The hub administration needs to <strong>contact us</strong> so we can provision a bucket.</p></li>
-<li><p>They need to add a bit of <strong>lightweight configuration</strong> to their <code>admin.json</code> file to activate it and install the relevant action workflow.</p></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="github-workflows" class="slide level2">
-<h2>🔁 GitHub workflows</h2>
-<p>We automate everything we can:</p>
-<ul>
-<li>✅ PR-level model output validation</li>
-<li>✅ Hub configuration validation</li>
-<li>☁️ AWS Cloud hub data synching</li>
-<li>📊 dashboard data regeneration and model evaludation with each update</li>
-</ul>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>All hubverse actions stored in the <a href="https://github.com/hubverse-org/hubverse-actions"><strong><code>hubverse-actions</code></strong></a> repo and can be installed with <code>hubCI::use_hub_github_action()</code></p>
-</div>
-</div>
-</div>
-<aside class="notes">
-<p><strong>Automation is a cornerstone of the hubverse.</strong><br>
-We use <strong>GitHub Actions</strong> to handle <strong>hub operations</strong>.</p>
-<p>This includes:</p>
-<ul>
-<li><p>Validating model output submissions and target data at the <strong>pull request</strong> level,</p></li>
-<li><p>Validating <strong>hub configuration files</strong>,</p></li>
-<li><p>Synchronising validated model output to <strong>cloud storage</strong>,</p></li>
-<li><p>Generating dashboard data + computing model evaluation metrics.</p></li>
-</ul>
-<p>All our workflows are stored in the <a href="https://github.com/hubverse-org/hubverse-actions"><code>hubverse-actions</code></a> repo.<br>
-They’re easy to adopt, hub administrators can install them using the <code>hubCI::use_hub_github_action()</code> helper.</p>
-<p>This approach ensures <strong>consistency</strong>, and relatively <strong>low overhead</strong> for administrators.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="list-of-adopting-hubs" class="slide level2">
-<h2>🪩 List of adopting hubs</h2>
-<p><i class="fa-solid fa-link" aria-label="link"></i> <a href="https://hubverse.io/community/hubs.html" class="uri"><strong>https://hubverse.io/community/hubs.html</strong></a></p>
-<div class="cell">
-<iframe src="https://hubverse.io/community/hubs.html" width="960" height="500px" data-external="1">
-</iframe>
-</div>
-<aside class="notes">
-<p>Now that we’ve <strong>seen the infrastructure</strong>, let’s <strong>look at adoption</strong>.</p>
-<p><strong>This page</strong> on our site <strong>showcases</strong> <strong>hubs using the hubverse stack</strong>, from long-standing hubs like the <strong>Flusight Forecast Hub</strong> to newer efforts like the COVID-19 Variant Nowcast or West Nile Virus hubs.</p>
-<p>Each hub entry includes <strong>structured metadata</strong>: like a hub description, whether data are publicly available, and links to the relevant GitHub repos, dashboards and cloud storage.</p>
-<p>This kind of <strong>shared metadata and visibility</strong> wouldn’t be possible without the consistency enforced by the hubverse framework.</p>
-<p>It also serves as a <strong>community resource</strong>, a <strong>growing catalog of open modeling hubs</strong> that are easy to discover and learn from.</p>
+<p>Now let’s recap, this time from the perspective of each hubverse role and the tools designed to support it.</p>
+<p><em>(1, Starting with administrators)</em> who set the hub up and maintain the target data. They can use <code>hubAdmin</code> to build and validate the hub’s config, consult the schemas in addition to our documentation to plan hub configuration, <code>hubCI</code> to install operational workflows, and <code>hubValidations</code> to help them customise validation.</p>
+<p><em>(2, Then modelers)</em> who submit their model output. They can use <code>hubValidations</code> to check a submission before opening a pull request, and <code>hubData</code> to read hub data (including target data) back.</p>
+<p><em>(3, Analysts)</em> who want to perform analyses on hub data can use <code>hubData</code> to query and access data from the hub, <code>hubVis</code> to plot model outputs, <code>hubEnsembles</code> to build ensemmbles and <code>hubEvals</code> to evaluate model performance against the target data.</p>
+<p><em>(4, Stakeholders)</em> who might be less technical and want answers rather than files can access insights via the dashboard (supported by the dashboard template). Should they need access to data they can also download raw data from the cloud mirror.</p>
+<p><em>(5, Finally underneath it all, the hubverse developers and community)</em> who build and maintain the tools, the schemas and the docs, in the open, and we maintain a bunch of tools and templates to support our activities.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -878,10 +1657,10 @@ They’re easy to adopt, hub administrators can install them using the <code>hub
       }</style></aside>
 </section></section>
 <section>
-<section id="real-world-example-cdc-flusight-hub" class="title-slide slide level1 inverse center" data-background-color="black">
-<h1>🦠 Real-world example: CDC FluSight Hub</h1>
+<section id="flusight-in-operation" class="title-slide slide level1 inverse center" data-background-color="black">
+<h1>🦠 FluSight in operation</h1>
 <aside class="notes">
-<p>Now let’s take a look at some this infrastrcuture in action by focusing on the CDC Flusight Hub</p>
+<p>So that’s how the hub is <strong>set up</strong>. Now let’s watch it <strong>run</strong>: a submission arriving, being validated, and everything that happens downstream.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -894,56 +1673,13 @@ They’re easy to adopt, hub administrators can install them using the <code>hub
           display:block!important;
       }</style></aside>
 </section>
-<section id="real-world-example-cdc-flusight-hub-1" class="slide level2">
-<h2>Real-world example: <a href="https://github.com/cdcepi/FluSight-forecast-hub">CDC FluSight Hub</a></h2>
-<p><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/cdcepi/FluSight-forecast-hub" class="uri"><strong>https://github.com/cdcepi/FluSight-forecast-hub</strong></a></p>
-<div class="columns">
-<div class="column" style="width:70%;">
-<p><img data-src="assets/images/flusight-hub.png" alt="Screenshot of CDC Flusight Hub Github repo"> <img data-src="assets/images/cdc-logo.png" width="100"></p>
-</div><div class="column smaller" style="width:30%;">
-<ul>
-<li>Used by US CDC to <strong>monitor influenza severity</strong></li>
-<li><strong>Weekly</strong> forecasts from <strong>40 teams</strong> across <strong>70 different models.</strong></li>
-<li>Hosted on <strong>GitHub + S3 cloud mirror</strong>.</li>
-<li>Managed using <strong>full hubverse stack since 2023/2024 season</strong>.</li>
-</ul>
-</div>
-</div>
+<section id="where-model-output-lives" class="slide level2">
+<h2>📁 Where model output lives</h2>
+<p><code>model-output/&lt;model_id&gt;/&lt;round_id&gt;-&lt;model_id&gt;.csv</code> · one directory per model, one file per round</p>
+<p><a href="assets/images/flusight-model-outputs.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="assets/images/flusight-model-outputs.png" style="width:78.0%" alt="Screenshot of flusight hub model output files"></a></p>
 <aside class="notes">
-<p>The <strong>CDC FluSight Hub</strong> is a flagship example of the hubverse stack in action.</p>
-<p>It’s used by the <strong>US CDC to monitor influenza severity</strong> through <strong>weekly model outputs</strong>, submitted by over <strong>40 teams</strong>, spanning <strong>70 different models</strong>.</p>
-<p>The hub is <strong>fully managed</strong> using the hubverse software, <strong>workflows</strong> and <strong>S3 cloud mirroring</strong> since the <strong>2023/24 season</strong>.</p>
-<p>If we peek into the repository structure, you’ll see the <strong>key directories</strong> that define a hub:</p>
-<ul>
-<li><code>hub-config</code>: holds the JSON config files.</li>
-<li><code>model-output</code>: where teams submit their model output files</li>
-<li><code>target-data</code>: stores the <strong>observed data</strong> used to <strong>evaluate forecasts</strong>, such as <strong>reported influenza-like illness rates</strong>.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="file-structure-model-output-cdc-flusight" class="slide level2">
-<h2>📁 File structure: model output (CDC FluSight)</h2>
-<p>Model outputs committed by teams to versioned directories &gt; one directory per model &gt; one file per modeling round.</p>
-<p><a href="assets/images/flusight-model-outputs.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="assets/images/flusight-model-outputs.png" style="width:90.0%" alt="Screenshot of flusight hub model output files"></a></p>
-<aside class="notes">
-<p>This slide breaks down a single model output file and it’s location in the <strong>CDC FluSight hub</strong>.</p>
-<p>On the top, we see the file lives under the <code>model-output/&lt;model_id&gt;</code> directory.</p>
-<p>Files are named using a <strong>round ID</strong> and <strong>model ID</strong>, e.g., <code>2023-10-14-CADPH-FluCAT_Ensemble.csv</code>. Each <strong>file contains all predictions</strong> for <strong>that round</strong> by <strong>that model.</strong></p>
-<p>Inside the file:</p>
-<p>- The <strong>Task ID columns</strong>, like <code>target</code>, <code>horizon</code>, and <code>location</code> store information about individual predictions.</p>
-<p>- The <strong>Output Type columns</strong> describe the prediction format (e.g., quantiles).</p>
-<p>- And the <code>value</code> column holds the actual predicted values.</p>
-<p>This file structure (task ids, output type, values) is fully standardised across all hubs.</p>
+<p>Quick one, just so you’ve seen where model output actually lives on GitHub.</p>
+<p>One directory per model. One file per round. The filename is the round ID plus the model ID, so you can tell what a file is without opening it.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -958,33 +1694,147 @@ They’re easy to adopt, hub administrators can install them using the <code>hub
 </section>
 <section id="model-output-validation-with-hubvalidations" class="slide level2">
 <h2>✅ Model output validation with <a href="https://hubverse-org.r-universe.dev/hubValidations"><code>hubValidations</code></a></h2>
-<p>Model outputs submitted through PRs and validated through GitHub Actions</p>
+<p>Submitted by pull request, validated by GitHub Actions, <strong>reported back on the PR</strong></p>
 <div class="columns">
-<div class="column" style="width:40%;">
-<p><a href="assets/images/flusight-pr.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/images/flusight-pr.png" alt="Screenshot of flusight hub model submission PRs"></a></p>
-</div><div class="column" style="width:60%;">
-<p><a href="assets/images/ga-action-screenshot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="assets/images/ga-action-screenshot.png" alt="screenshot of flusight hub model submission validation results"></a></p>
+<div class="column" style="width:34%;">
+<p><a href="assets/images/flusight-pr.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img data-src="assets/images/flusight-pr.png" alt="Screenshot of the FluSight hub pull request list: 2 open, 3,680 closed, with recent weekly model submissions from several teams"></a></p>
+</div><div class="column" style="width:66%;">
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Passed</a></li><li><a href="#tabset-1-2">Failed</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="hv-ghcomment">
+  <div class="hv-ghc-head">
+    <strong>github-actions</strong><span class="hv-ghc-badge">bot</span> commented
+  </div>
+  <div class="hv-ghc-body">
+    <div class="hv-ghc-title">Submission validation</div>
+    <div class="hv-ghc-verdict">✅ <strong>All validation checks passed.</strong></div>
+    <details class="hv-ghc-details">
+      <summary>Check results</summary>
+<pre class="hv-ghc-log"><span class="rule">── hub-config ────</span>
+<span class="ok">✔ [valid_config]</span>: All hub config files are valid.
+
+<span class="rule">── team1-goodmodel/2022-10-29-team1-goodmodel.csv ────</span>
+<span class="ok">✔ [file_name]</span>: File name is valid.
+<span class="ok">✔ [file_location]</span>: File directory name matches
+  `model_id` metadata in file name.
+<span class="ok">✔ [file_format]</span>: File is accepted hub format.
+<span class="ok">✔ [metadata_exists]</span>: Metadata file exists.
+<span class="ok">✔ [colnames]</span>: Column names are consistent with
+  expected round task IDs and std column names.
+<span class="ok">✔ [col_types]</span>: Column data types match hub schema.
+<span class="ok">✔ [req_vals]</span>: Required task ID/output type/output
+  type ID combinations all present.
+<span class="more">… 18 further checks</span></pre>
+    </details>
+  </div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="hv-ghcomment">
+  <div class="hv-ghc-head">
+    <strong>github-actions</strong><span class="hv-ghc-badge">bot</span> commented
+  </div>
+  <div class="hv-ghc-body">
+    <div class="hv-ghc-title">Submission validation</div>
+    <div class="hv-ghc-verdict">❌ <strong>Validation failed.</strong> The checks below did
+      not pass. Push a new commit to the pull request to re-run them.</div>
+<pre class="hv-ghc-log"><span class="rule">── hub-config ────</span>
+<span class="ok">✔ [valid_config]</span>: All hub config files are valid.
+
+<span class="rule">── team1-goodmodel/2022-10-22-team1-goodmodel.csv ────</span>
+<span class="ok">✔ [file_name]</span>: File name is valid.
+<span class="ok">✔ [metadata_exists]</span>: Metadata file exists.
+<span class="bad">✖ [submission_time]</span>: Submission time must be within
+  accepted submission window for round. Current time
+  "2026-08-12 18:55:10 UTC" is outside window
+  2022-10-16 EDT--2022-10-23 23:59:59 EDT.
+<span class="ok">✔ [colnames]</span>: Column names are consistent with
+  expected round task IDs and std column names.
+<span class="ok">✔ [req_vals]</span>: Required task ID/output type/output
+  type ID combinations all present.
+<span class="ok">✔ [value_col_non_desc]</span>: Quantile or cdf values
+  increase when ordered by `output_type_id`.
+<span class="more">… 21 further checks</span></pre>
+  </div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <aside class="notes">
-<p>Every <strong>model output</strong> is <strong>submitted via GitHub pull requests</strong>, and <strong>each submission</strong> is validated using the <code>hubValidations</code> package.</p>
-<p>On the left, we see the latest submissions from different teams for a specific forecast round.</p>
-<p>On the right is an example validation log from GitHub Actions. Here, <code>hubValidations</code> checks that the submission:</p>
+<p>Let’s take a look at a hub’s core operation which is model submission.</p>
+<p>As mentioned, every model output comes in as a pull request, and gets validated by CI which effectivelly deploys hubValidations validation functions.</p>
+<p>On the left, we see submissions from different teams for one round.</p>
+<p>On the right, we see validation results.</p>
+<p><em>(Passed tab)</em> When everything passes, one green tick, and the detail stays collapsed but still accessible.</p>
+<p><em>(Failed tab)</em> When it fails it’s red, expanded, and it names the check. Here the only problem is that the submission arrived outside the submission window.</p>
+<p>Note that until now a failed submission meant digging through the Actions log to find out why. what I’m showing is a new feature we added where the result gets posted straight onto the pull request.</p>
+<p><em>(Both examples are from our own CI test hub, since the workflow is too new for a production hub to be running it.)</em></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-actually-gets-checked" class="slide level2">
+<h2>🔎 What actually gets checked</h2>
+<div class="columns">
+<div class="column" style="width:52%;">
+<p><strong>Standard checks, generated from <code>tasks.json</code></strong></p>
 <ul>
-<li><p>Passes file level checks e.g.:</p>
-<ul>
-<li><p>Follows the required file structure,</p></li>
-<li><p>Is named and placed correctly,</p></li>
-</ul></li>
-<li><p>And passes content-level checks:</p>
-<ul>
-<li><p>valid task ID and output type value combinations,</p></li>
-<li><p>required tasks submitted,</p></li>
-<li><p>valid output types - output type specific checks (e.g quantile crossing)</p></li>
-<li><p>Custom checks also supported</p></li>
-</ul></li>
+<li>📄 <strong>File</strong>: exists, named and located correctly, readable, submitted within the window</li>
+<li>🧱 <strong>Structure</strong>: expected columns, correct types, no duplicate rows, round ID matches the file name</li>
+<li>🎯 <strong>Content</strong>: valid task ID combinations, every <em>required</em> task present, values within configured bounds</li>
+<li>📐 <strong>Output-type specific</strong>: quantiles don’t cross, <code>pmf</code> sums to 1, right number of samples per compound task</li>
+<li>🏷️ <strong>Model metadata</strong>: validated against <code>model-metadata-schema.json</code></li>
+<li>🎯 <strong>Target data</strong>: its own validation suite</li>
 </ul>
-<p>These <strong>automated</strong> checks <strong>catch errors early</strong> and <strong>keep hub data clean</strong> and <strong>trustworthy.</strong></p>
+</div><div class="column" style="width:48%;">
+<p><strong>Hub-specific checks in <code>hub-config/validations.yml</code></strong></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href=""></a><span class="fu">default</span><span class="kw">:</span></span>
+<span id="cb8-2"><a href=""></a><span class="at">  </span><span class="fu">validate_model_data</span><span class="kw">:</span></span>
+<span id="cb8-3"><a href=""></a><span class="at">    </span><span class="fu">horizon_timediff</span><span class="kw">:</span></span>
+<span id="cb8-4"><a href=""></a><span class="at">      </span><span class="fu">fn</span><span class="kw">:</span><span class="at"> </span><span class="st">"opt_check_tbl_horizon_timediff"</span></span>
+<span id="cb8-5"><a href=""></a><span class="at">      </span><span class="fu">pkg</span><span class="kw">:</span><span class="at"> </span><span class="st">"hubValidations"</span></span>
+<span id="cb8-6"><a href=""></a><span class="at">      </span><span class="fu">args</span><span class="kw">:</span></span>
+<span id="cb8-7"><a href=""></a><span class="at">        </span><span class="fu">t0_colname</span><span class="kw">:</span><span class="at"> </span><span class="st">"reference_date"</span></span>
+<span id="cb8-8"><a href=""></a><span class="at">        </span><span class="fu">t1_colname</span><span class="kw">:</span><span class="at"> </span><span class="st">"target_end_date"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><strong>Opt-in</strong> checks shipped with <code>hubValidations</code></li>
+<li>Or the hub’s <strong>own R functions</strong>, in <code>src/validations/R</code></li>
+</ul>
+<div class="callout callout-tip no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><code>create_custom_check()</code> scaffolds a custom check: right structure, return classes and conventions, ready to fill in.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>So what does validation actually cover?</p>
+<p>On the left, the list of standard checks:</p>
+<ul>
+<li><p>at the file level: we check whether a file is named correctly and stored in the right place and format, whether it can be parsed and whether it was submitted inside the window.</p></li>
+<li><p>Structural properties we check include: expected columns and data types, no duplicate rows, and that file round IDs match ids in the data.</p></li>
+<li><p>further Content checks include: whether task ID and output type values are valid according to the config, whether every required task has been submitted to, are the predicted values within the bounds the config declared.</p></li>
+<li><p>Finally we also include output-type-specific ones. For example Quantile predicted values mustn’t cross. <code>pmf</code> probabilities must to sum to one. The correct number of samples must be submitted, with a consistent compound task ID set.</p></li>
+</ul>
+<p>Plus we validate model metadata against their schema, and target data have its own validation suite.</p>
+<p>But hubs aren’t all the same, and we can’t anticipate every rule a hub needs.</p>
+<p>So on the right, admins can configure extra checks uning the <code>validations.yml</code>. Some are opt-in checks we ship, like this one, which checks <code>target_end_date</code> really is the correct number of <code>horizon</code> weeks after <code>reference_date</code>. There’s another that checks predicted counts don’t exceed the population of the location.</p>
+<p>Beyond that, a hub can write its own cuctom check functions in R and register them in the same way. They run in the same pipeline, the same Action, and turn up in the same report.</p>
+<p>Admins can use <code>create_custom_check()</code> function to create a custom check function template, with the right structure and return classes, so they only write the logic.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1003,16 +1853,13 @@ They’re easy to adopt, hub administrators can install them using the <code>hub
 <div class="column" style="width:35%;">
 <p>Connect to Arrow dataset of forecast submissions</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">library</span>(hubData)</span>
-<span id="cb1-2"><a href=""></a></span>
-<span id="cb1-3"><a href=""></a>hub_path <span class="ot">&lt;-</span> <span class="fu">s3_bucket</span>(</span>
-<span id="cb1-4"><a href=""></a>  <span class="st">"cdcepi-flusight-forecast-hub"</span></span>
-<span id="cb1-5"><a href=""></a>)</span>
-<span id="cb1-6"><a href=""></a>hub_con <span class="ot">&lt;-</span> <span class="fu">connect_hub</span>(</span>
-<span id="cb1-7"><a href=""></a>  hub_path,</span>
-<span id="cb1-8"><a href=""></a>  <span class="at">skip_checks =</span> <span class="cn">TRUE</span></span>
-<span id="cb1-9"><a href=""></a>)</span>
-<span id="cb1-10"><a href=""></a>hub_con</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a><span class="fu">library</span>(hubData)</span>
+<span id="cb9-2"><a href=""></a></span>
+<span id="cb9-3"><a href=""></a>hub_path <span class="ot">&lt;-</span> <span class="fu">s3_bucket</span>(</span>
+<span id="cb9-4"><a href=""></a>  <span class="st">"cdcepi-flusight-forecast-hub"</span></span>
+<span id="cb9-5"><a href=""></a>)</span>
+<span id="cb9-6"><a href=""></a>hub_con <span class="ot">&lt;-</span> <span class="fu">connect_hub</span>(hub_path)</span>
+<span id="cb9-7"><a href=""></a>hub_con</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -1032,29 +1879,24 @@ model_id: string</code></pre>
 </div><div class="column" style="width:65%;">
 <p>Query and collect data</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="co"># Filter for one model and forecast date using dplyr</span></span>
-<span id="cb3-2"><a href=""></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb3-3"><a href=""></a>hub_con <span class="sc">|&gt;</span></span>
-<span id="cb3-4"><a href=""></a>  <span class="fu">filter</span>(</span>
-<span id="cb3-5"><a href=""></a>    model_id <span class="sc">==</span> <span class="st">"CADPH-FluCAT_Ensemble"</span>,</span>
-<span id="cb3-6"><a href=""></a>    target_end_date <span class="sc">==</span> <span class="st">"2023-10-28"</span></span>
-<span id="cb3-7"><a href=""></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb3-8"><a href=""></a>  <span class="fu">collect_hub</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href=""></a><span class="co"># Filter for one model and forecast date using dplyr</span></span>
+<span id="cb11-2"><a href=""></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb11-3"><a href=""></a>hub_con <span class="sc">|&gt;</span></span>
+<span id="cb11-4"><a href=""></a>  <span class="fu">filter</span>(</span>
+<span id="cb11-5"><a href=""></a>    model_id <span class="sc">==</span> <span class="st">"CADPH-FluCAT_Ensemble"</span>,</span>
+<span id="cb11-6"><a href=""></a>    target_end_date <span class="sc">==</span> <span class="st">"2023-10-28"</span></span>
+<span id="cb11-7"><a href=""></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb11-8"><a href=""></a>  <span class="fu">collect_hub</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 92 × 9
-   model_id   reference_date target horizon target_end_date location output_type
- * &lt;chr&gt;      &lt;date&gt;         &lt;chr&gt;    &lt;int&gt; &lt;date&gt;          &lt;chr&gt;    &lt;chr&gt;      
- 1 CADPH-Flu… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
- 2 CADPH-Flu… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
- 3 CADPH-Flu… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
- 4 CADPH-Flu… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
- 5 CADPH-Flu… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
- 6 CADPH-Flu… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
- 7 CADPH-Flu… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
- 8 CADPH-Flu… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
- 9 CADPH-Flu… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
-10 CADPH-Flu… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
-# ℹ 82 more rows
+  model_id    reference_date target horizon target_end_date location output_type
+* &lt;chr&gt;       &lt;date&gt;         &lt;chr&gt;    &lt;int&gt; &lt;date&gt;          &lt;chr&gt;    &lt;chr&gt;      
+1 CADPH-FluC… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
+2 CADPH-FluC… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
+3 CADPH-FluC… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
+4 CADPH-FluC… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
+5 CADPH-FluC… 2023-10-14     wk in…       2 2023-10-28      06       quantile   
+# ℹ 87 more rows
 # ℹ 2 more variables: output_type_id &lt;chr&gt;, value &lt;dbl&gt;</code></pre>
 </div>
 </div>
@@ -1069,11 +1911,11 @@ model_id: string</code></pre>
 </div>
 </div>
 <aside class="notes">
-<p>We’ve designed the hubverse format so that, while teams look after their own submission files, model outputs can be <strong>accessed</strong> as a <strong>whole</strong> as a <strong>queryable Arrow dataset</strong>.</p>
-<p>Here we show <strong>how to connect to the FluSight hub’s S3 mirror using <code>hubData</code></strong>.</p>
-<p>We can then filter and collect data using standard <code>dplyr</code> verbs.</p>
-<p>This makes it easy for <strong>analysts</strong>, <strong>modelers</strong>, or <strong>public</strong> <strong>health</strong> <strong>teams</strong> to extract <strong>relevant</strong> <strong>subsets</strong> of data they need.</p>
-<p>The same functionality is available in Python via the <code>hub-data</code> package.</p>
+<p>Let’s talk about accessing data now.</p>
+<p>We’ve designed the format so that, while teams look after their <strong>own</strong> submission files, model outputs can be <strong>accessed as a whole</strong> as a <strong>queryable Arrow dataset</strong>.</p>
+<p>Here we connect to the FluSight hub’s <strong>S3 mirror</strong> with <code>hubData</code>. At this point we can interogate the hub’s schema.</p>
+<p>We then filter and collect data using standard <code>dplyr</code> verbs. In this example we filter for model output from a single model for a specific target end date before collecting data into our local R sesssion.</p>
+<p>Note that the same functionality is available in Python via <code>hubdata</code> and both can also be used to access data from a local clone as well as the cloud.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1090,46 +1932,42 @@ model_id: string</code></pre>
 <h2>🌐 Ensembling with <code>hubEnsembles</code></h2>
 <p>Combine models using simple or weighted rules</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>forecast_df <span class="ot">&lt;-</span> hub_con <span class="sc">|&gt;</span></span>
-<span id="cb5-2"><a href=""></a>  <span class="fu">filter</span>(</span>
-<span id="cb5-3"><a href=""></a>    model_id <span class="sc">%in%</span></span>
-<span id="cb5-4"><a href=""></a>      <span class="fu">c</span>(</span>
-<span id="cb5-5"><a href=""></a>        <span class="st">"CADPH-FluCAT_Ensemble"</span>,</span>
-<span id="cb5-6"><a href=""></a>        <span class="st">"CEPH-Rtrend_fluH"</span>,</span>
-<span id="cb5-7"><a href=""></a>        <span class="st">"CFA_Pyrenew-Pyrenew_HE_Flu"</span></span>
-<span id="cb5-8"><a href=""></a>      ),</span>
-<span id="cb5-9"><a href=""></a>    output_type <span class="sc">==</span> <span class="st">"quantile"</span></span>
-<span id="cb5-10"><a href=""></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb5-11"><a href=""></a>  <span class="fu">collect_hub</span>()</span>
-<span id="cb5-12"><a href=""></a></span>
-<span id="cb5-13"><a href=""></a></span>
-<span id="cb5-14"><a href=""></a>hubEnsembles<span class="sc">::</span><span class="fu">simple_ensemble</span>(</span>
-<span id="cb5-15"><a href=""></a>  forecast_df, </span>
-<span id="cb5-16"><a href=""></a>  <span class="at">agg_fun =</span> median,</span>
-<span id="cb5-17"><a href=""></a>  <span class="at">model_id =</span> <span class="st">"simple-ensemble-median"</span></span>
-<span id="cb5-18"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a>forecast_df <span class="ot">&lt;-</span> hub_con <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a href=""></a>  <span class="fu">filter</span>(</span>
+<span id="cb13-3"><a href=""></a>    model_id <span class="sc">%in%</span></span>
+<span id="cb13-4"><a href=""></a>      <span class="fu">c</span>(</span>
+<span id="cb13-5"><a href=""></a>        <span class="st">"CADPH-FluCAT_Ensemble"</span>,</span>
+<span id="cb13-6"><a href=""></a>        <span class="st">"CEPH-Rtrend_fluH"</span>,</span>
+<span id="cb13-7"><a href=""></a>        <span class="st">"CFA_Pyrenew-Pyrenew_HE_Flu"</span></span>
+<span id="cb13-8"><a href=""></a>      ),</span>
+<span id="cb13-9"><a href=""></a>    output_type <span class="sc">==</span> <span class="st">"quantile"</span></span>
+<span id="cb13-10"><a href=""></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb13-11"><a href=""></a>  <span class="fu">collect_hub</span>()</span>
+<span id="cb13-12"><a href=""></a></span>
+<span id="cb13-13"><a href=""></a></span>
+<span id="cb13-14"><a href=""></a>hubEnsembles<span class="sc">::</span><span class="fu">simple_ensemble</span>(</span>
+<span id="cb13-15"><a href=""></a>  forecast_df,</span>
+<span id="cb13-16"><a href=""></a>  <span class="at">agg_fun =</span> median,</span>
+<span id="cb13-17"><a href=""></a>  <span class="at">model_id =</span> <span class="st">"simple-ensemble-median"</span></span>
+<span id="cb13-18"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 282,716 × 9
-   model_id   reference_date target horizon target_end_date location output_type
- * &lt;chr&gt;      &lt;date&gt;         &lt;chr&gt;    &lt;int&gt; &lt;date&gt;          &lt;chr&gt;    &lt;chr&gt;      
- 1 simple-en… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
- 2 simple-en… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
- 3 simple-en… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
- 4 simple-en… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
- 5 simple-en… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
- 6 simple-en… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
- 7 simple-en… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
- 8 simple-en… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
- 9 simple-en… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
-10 simple-en… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
-# ℹ 282,706 more rows
+<pre><code># A tibble: 492,476 × 9
+  model_id    reference_date target horizon target_end_date location output_type
+* &lt;chr&gt;       &lt;date&gt;         &lt;chr&gt;    &lt;int&gt; &lt;date&gt;          &lt;chr&gt;    &lt;chr&gt;      
+1 simple-ens… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
+2 simple-ens… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
+3 simple-ens… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
+4 simple-ens… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
+5 simple-ens… 2023-10-14     wk in…      -1 2023-10-07      01       quantile   
+# ℹ 492,471 more rows
 # ℹ 2 more variables: output_type_id &lt;chr&gt;, value &lt;dbl&gt;</code></pre>
 </div>
 </div>
 <aside class="notes">
-<p><strong>Ensembling is central to the hub idea</strong> as it helps improve prediction robustness by combining multiple model predictions into a single output.</p>
-<p><code>hubEnsembles</code> provides a <strong>simple interface</strong> to build various types of ensembles from hubverse formatted data.</p>
-<p>This example shows how to pull data from a few different models and apply a simple ensemble method.</p>
+<p>Next ensembing.</p>
+<p><strong>Ensembling is central to the hub idea</strong>: combining multiple model predictions usually gives <strong>more robust</strong> forecasts than any single model.</p>
+<p>package <code>hubEnsembles</code> provides a <strong>simple interface</strong> for building ensembles from hubverse-formatted data.</p>
+<p>In this example we’ve downloaded quantile model output data from 3 models. And from that we can create a simple ensemble, here using median as the aggregation function.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1143,13 +1981,14 @@ model_id: string</code></pre>
       }</style></aside>
 </section>
 <section id="dashboard---forecasts" class="slide level2">
-<h2>📈 Dashboard - <a href="https://reichlab.io/flusight-dashboard/forecast.html?as_of=2025-05-31&amp;interval=95%25&amp;target_var=wk+inc+flu+hosp&amp;xaxis_range=2023-09-01&amp;xaxis_range=2025-07-01&amp;yaxis_range=-3787.6522689994536&amp;yaxis_range=57169.8764352105&amp;model=FluSight-ensemble&amp;model=FluSight-baseline&amp;location=US">forecasts</a></h2>
-<p><a href="assets/images/dashboard-forecasts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="assets/images/dashboard-forecasts.png" style="width:85.0%"></a></p>
+<h2>📈 Dashboard - <a href="https://reichlab.io/flusight-dashboard/forecast.html?as_of=2026-05-30&amp;interval=95%25&amp;target_var=wk+inc+flu+hosp&amp;xaxis_range=2024-09-01&amp;xaxis_range=2026-07-01&amp;yaxis_range=-3787.6522689994536&amp;yaxis_range=57169.8764352105&amp;model=FluSight-ensemble&amp;model=FluSight-baseline&amp;location=US">forecasts</a></h2>
+<p><a href="assets/images/dashboard-forecasts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/images/dashboard-forecasts.png" style="width:85.0%"></a></p>
 <aside class="notes">
-<p>This is the FluSight dashboard and specifically the forecast page.</p>
-<p>It enables users to <strong>explore predictions interactively</strong>: you can choose <strong>outcomes</strong>, <strong>forecast dates</strong> and compare multiple models visually.</p>
-<p>Crucially, the <strong>dashboard also shows the target (observed) data alongside forecasts</strong>, which helps <strong>contextualise model behaviour</strong> and <strong>monitor real-world performance</strong>.</p>
-<p><strong>Clicking on any model name in the left-hand panel opens that model’s metadata page</strong> , which includes details about the model, contributors, assumptions etc.</p>
+<p>The last feature I’d like to demo are our dashboards:</p>
+<p>This is the FluSight dashboard, forecast page.</p>
+<p>It lets users <strong>explore predictions interactively</strong>: they can choose different <strong>outcomes</strong>, <strong>forecast dates</strong>, and compare model outputs visually.</p>
+<p>Crucially, the <strong>target (observed) data is shown alongside the forecasts</strong>, which helps <strong>contextualise model behaviour</strong> and <strong>monitor real-world performance</strong>.</p>
+<p>You can also get more info on individual models by <strong>Clicking a model name</strong> which opens its model metadata file.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1165,17 +2004,87 @@ model_id: string</code></pre>
 <section id="dashboard---model-evaluations" class="slide level2">
 <h2>🩺 Dashboard - <a href="https://reichlab.io/flusight-dashboard/eval.html">model evaluations</a></h2>
 <p>Evaluates forecasts against target (observed) data.</p>
-<p><a href="assets/images/dashboard-eval.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img data-src="assets/images/dashboard-eval.png" style="width:80.0%"></a></p>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Table</a></li><li><a href="#tabset-2-2">Plot</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<p><a href="assets/images/dashboard-eval-table.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img data-src="assets/images/dashboard-eval-table.png" style="width:70.0%" alt="Screenshot of the FluSight dashboard evaluation table, ranking models by relative WIS, WIS, relative MAE, MAE and interval coverage"></a></p>
+</div>
+<div id="tabset-2-2">
+<p><a href="assets/images/dashboard-eval-plot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img data-src="assets/images/dashboard-eval-plot.png" style="width:70.0%" alt="Screenshot of the FluSight dashboard evaluation heatmap, showing relative WIS for each model disaggregated by location"></a></p>
+</div>
+</div>
+</div>
 <aside class="notes">
-<p>This is the <strong>evaluation tab</strong> of the FluSight dashboard, which <strong>helps users compare model performance</strong> using <strong>standard metrics</strong>.</p>
-<p>It’s <strong>powered by the <code>hubEvals</code> package,</strong> which <strong>computes evaluation scores</strong> by <strong>comparing model outputs</strong> to the <strong>target data,</strong> also stored in the hub.</p>
-<p>The evaluation <strong>supports scoring rules</strong> such as:</p>
+<p>Dashboards also support an <strong>evaluation tab</strong>, which enables the comparison of model performance using <strong>standard metrics</strong>.</p>
+<p>It’s powered by the <strong><code>hubEvals</code></strong> packages, which scores model output against the <strong>target data</strong> stored in the hub.</p>
+<p>It supports scoring rules such as <strong>WIS</strong> (Weighted Interval Score), <strong>MAE</strong>, and <strong>coverage</strong> of the 50% and 95% prediction intervals. Each is also available <strong>relative to the baseline model</strong>, and <strong>on trasformed scales</strong>.</p>
+<p>You choose the <strong>target</strong> and the <strong>evaluation set</strong> (here, the 2025-26 season at state level). Every metric has a <strong>definition in the sidebar</strong>, so it’s interpretable by someone who isn’t a forecasting specialist.</p>
+<p><em>(switch tab)</em> The same scores can be viewed as a <strong>plot</strong> rather than a table. This is a <strong>heatmap of relative WIS</strong>, one row per model, <strong>disaggregated by location</strong>, so you can see at a glance not just <strong>which models did well overall</strong>, but <strong>where</strong> they did well.</p>
+<p>Evaluations are computed via CI <strong>during the dashboard build</strong>, straight from the hub’s model output and target data.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="closing-remarks" class="title-slide slide level1 inverse center" data-background-color="black">
+<h1>Closing remarks</h1>
+<aside class="notes">
+<p>Let me finish by stepping back: who is actually using this, what we’ve learned building it, and where to find it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="whos-using-it" class="slide level2">
+<h2>🪩 Who’s using it</h2>
+<div class="columns">
+<div class="column" style="width:37%;">
+<p><strong>34 hubs</strong> across <strong>15 organizations</strong>, on five continents</p>
+<p><strong>736 models</strong> · <strong>4.6 billion rows</strong> of model output <em>(Sep 2026)</em></p>
+<p><strong>Five kinds of hub:</strong></p>
 <ul>
-<li><p><strong>WIS</strong> (<strong>Weighted Interval Score</strong>)</p></li>
-<li><p><strong>MAE</strong> (<strong>Mean Absolute Error)</strong></p></li>
-<li><p><strong>Coverage</strong> of <strong>50% and 95%</strong> prediction intervals</p></li>
+<li>🌍 <strong>Community</strong>: open, public repos</li>
+<li>🔒 <strong>Collaborative, private</strong>: e.g.&nbsp;Paraguay, Australia–Aotearoa</li>
+<li>🧪 <strong>Local / model development</strong>: a hub on your own laptop</li>
+<li>🎓 <strong>Training</strong>: teaching hubs</li>
+<li>🗄️ <strong>Archival</strong>: retired hubs, kept queryable</li>
 </ul>
-<p>Evaluations are <strong>performed during the dashboard build</strong> and are <strong>summarised</strong> into an <strong>interactive table</strong>, allowing for quick comparison across models.</p>
+</div><div class="column" style="width:63%;">
+<p><i class="fa-solid fa-link" aria-label="link"></i> <a href="https://hubverse.io/community/hubs.html" class="uri"><strong>hubverse.io/community/hubs.html</strong></a></p>
+<div class="cell">
+<iframe src="https://hubverse.io/community/hubs.html" width="960" height="440px" data-external="1">
+</iframe>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>We’ve been really happy to see the breath of adoption of the framework:</p>
+<p>Firstly you can find a list of registered hubs on our website along with a bunch of useful metadata from each hub.</p>
+<p>Overall we know of 34 hubs across 15 organisations, 736 models, with about 4.6 billion rows of public model output submitted! Some examples include:</p>
+<ul>
+<li>US CDC hubs which include FluSight, COVID-19 and RSV.</li>
+<li>The European CDC runs RespiCast and RespiCompass hubs.</li>
+<li>There are hubs maintained by Guelph in Canada, Australia and Aotearoa New Zealand, Paraguay, Guangzhou Laboratory in China,</li>
+<li>Even states liek California maintain West Nile Virus.</li>
+</ul>
+<p>One thing to note is that a hub doesn’t have to be collaborative. It works perfectly well local, on a laptop, with one team and many variations of models. If you’re developing a model you already need somewhere to put many versions of many forecasts in a consistent format so you can score them against each other. That’s a hub. And when you’re ready to join a community hub, you’re already in the right format.</p>
+<p>Finally there are training hubs too, as well as archival hubs. The team has invested time and effort into retro-fitting historical hubs into the hubverse standard, including FluSight al the way back to 2015 and COVID 19 era ad hoc hubs.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1193,31 +2102,39 @@ model_id: string</code></pre>
 <div class="columns">
 <div class="column" style="width:40%;">
 <ul>
-<li>✅ <strong>Standards + automation reduce friction</strong><br>
-</li>
-<li>🧰 <strong>Open source keeps it free &amp; accessible</strong><br>
-</li>
-<li>🏥 <strong>Collaborative infrastructure</strong> empowers public health<br>
-</li>
-<li>🌍 <strong>Standardised, open data fuels downstream use cases</strong> like training, education, and reproducible research</li>
+<li>📐 <strong>A good standard is leverage</strong>: define the interface once, reuse everything downstream</li>
+<li>✅ <strong>Standards + automation reduce friction</strong></li>
+<li>⚙️ <strong>Configuration over code</strong>: versioned schemas let the standard evolve without breaking hubs</li>
+<li>🧰 <strong>Open source keeps it free &amp; accessible</strong></li>
+<li>🌍 <strong>Standardised, open data fuels downstream use</strong>: teaching, reproducible research, and teams’ own model development</li>
 </ul>
 </div><div class="column" style="width:60%;">
-<div class="cell">
-<iframe src="https://nfidd.github.io/sismid/sessions/real-world-forecasts.html" width="960" height="400px" data-external="1">
-</iframe>
+<p><strong>Built on hubverse data</strong></p>
+<div class="hv-card">
+<p><span class="hv-card-title">SISMID</span> <a href="https://nfidd.github.io/sismid/sessions/real-world-forecasts.html"><i class="fa-solid fa-link" aria-label="link"></i></a></p>
+<p><span class="hv-card-sub">Short course teaching real-world outbreak forecast evaluation, worked directly on hub data</span></p>
 </div>
-<p><i class="fa-solid fa-link" aria-label="link"></i> <a href="https://nfidd.github.io/sismid/sessions/real-world-forecasts.html" class="uri">https://nfidd.github.io/sismid/sessions/real-world-forecasts.html</a></p>
+<div class="hv-card">
+<p><span class="hv-card-title">RespiLens</span> <a href="https://www.respilens.com/"><i class="fa-solid fa-link" aria-label="link"></i></a></p>
+<p><span class="hv-card-sub">A responsive web app to visualise US respiratory disease forecasts, built for state health departments and the public. ACCIDDA, UNC Chapel Hill</span></p>
+</div>
+<div class="hv-card">
+<p><span class="hv-card-title">MicroHub workshop</span> <a href="https://sjfox.github.io/microhub-workshop/"><i class="fa-solid fa-link" aria-label="link"></i></a></p>
+<p><span class="hv-card-sub">Hands-on workshop: run forecast models locally in a Docker app, then stand up your own hubverse hub on GitHub. Northern Arizona University</span></p>
+</div>
 </div>
 </div>
 <aside class="notes">
-<p>To wrap up:</p>
-<ul>
-<li><strong>Standards and automation reduce friction</strong> at every level -<strong>submitting</strong>, <strong>validating</strong>, <strong>accessing</strong> and <strong>comparing</strong> model outputs becomes much easier and more reliable.</li>
-<li><strong>Open-source tooling</strong> makes all this infrastructure freely accessible, which is <strong>especially valuable</strong> in <strong>fast-moving</strong> or <strong>resource-constrained</strong> public health contexts.</li>
-<li><strong>Collaborative infrastructure</strong> like this fosters <strong>shared understanding</strong> and <strong>coordinated and efficient efforts</strong>.</li>
-<li>But beyond that, <strong>making the data</strong> openly available in a <strong>standardised format</strong> opens <strong>doors to wider impact</strong>. For example, hubverse data are already being <strong>used in teaching</strong>, like this SISMID course on <strong>real-world outbreak forecast evaluation</strong>, which builds directly on hubverse data and tools.</li>
-</ul>
-<p>We hope this inspires other communities to adopt or adapt similar workflows.</p>
+<p>To wrap up, and these are the bits I think <strong>generalise well beyond epidemiology</strong>:</p>
+<p><strong>A good standard is leverage.</strong> We spent a lot of effort on the <strong>model output format</strong> and the <strong>config schema</strong> which set the foundation for all the downstream functionality.</p>
+<p><strong>Standards plus automation reduce friction</strong> and lower the barrier to adoption.</p>
+<p><strong>Configuration over code.</strong> Every hub was once a fork. Now it’s a <strong>JSON file validated against a versioned schema</strong>, which is what lets us <strong>evolve the ecosystem</strong> without breaking anyone.</p>
+<p><strong>Open-source tooling</strong> makes this freely accessible, which matters in <strong>fast-moving or resource-constrained</strong> public health contexts.</p>
+<p>And <strong>standardised, open data opens doors</strong>. Three examples, all built by other people on top of hub data.</p>
+<p>SISMID, a short course teaching real-world forecast evaluation, taught directly on hub data.</p>
+<p>RespiLens, out of ACCIDDA at UNC, a web app for exploring US respiratory forecasts, aimed at state health departments and the public. Their own docs put it nicely: they rely on the hubverse to standardise and consolidate the forecast data, and RespiLens is purely a visualisation layer.</p>
+<p>And the MicroHub workshop, from Northern Arizona University shows Public health teams how to run forecast models locally and export hub-ready output and build an actual hubverse hub on GitHub during the workshop. It starts as a hub for one person, and the materials make the point that it extends to a collaborative, multi-team hub with a dashboard, with minimal changes. Which is the local hub for model development argument from earlier, being taught.</p>
+<p>None of these are projects ours. They exist because the data and the format are open.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1232,12 +2149,16 @@ model_id: string</code></pre>
 </section>
 <section id="thank-you" class="slide level2">
 <h2>🙏 Thank you!</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
 <ul>
 <li><i class="fa-solid fa-link" aria-label="link"></i> <a href="https://hubverse.io" class="uri">https://hubverse.io</a></li>
 <li><i class="fa-solid fa-book" aria-label="book"></i> <a href="https://docs.hubverse.io" class="uri">https://docs.hubverse.io</a></li>
 <li><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/hubverse-org"><code>hubverse-org</code></a></li>
+<li><i class="fa-solid fa-cube" aria-label="cube"></i> <strong>Install the packages:</strong> <a href="https://hubverse-org.r-universe.dev" class="uri">https://hubverse-org.r-universe.dev</a></li>
 <li><i class="fa-solid fa-envelope" aria-label="envelope"></i> <a href="mailto:info@r-rse.eu">info@r-rse.eu</a></li>
 </ul>
+</div><div class="column" style="width:45%;">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -1247,12 +2168,30 @@ model_id: string</code></pre>
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p>Interested in getting involved in the community? Check out our <a href="https://hubverse.io/community/#get-involved"><strong>Getting Involved</strong></a> page!</p>
+<p>Interested in getting involved? Check out our <a href="https://hubverse.io/community/#get-involved"><strong>Getting Involved</strong></a> page!</p>
+</div>
+</div>
+</div>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>📄 <strong>Read more</strong></p>
+<p>Consortium of Infectious Disease Modeling Hubs <em>et al.</em> (2026)<br>
+<strong>A software platform for collaborative infectious disease modelling</strong><br>
+<em>Nature Health</em></p>
+<p><a href="https://doi.org/10.1038/s44360-026-00145-7" class="uri">https://doi.org/10.1038/s44360-026-00145-7</a></p>
+<p>Open-access preprint:<br>
+<a href="https://doi.org/10.1101/2025.10.03.25337284" class="uri">https://doi.org/10.1101/2025.10.03.25337284</a></p>
+</div>
+</div>
 </div>
 </div>
 </div>
 <aside class="notes">
-<p>Thanks so much! I’ll leave you with some useful links, including information on how to get involved in the community like out newsletter, monthly community meetings or bi-weekly dev meetings.</p>
+<p>Thanks so much!</p>
+<p>Some useful links, and the <strong>paper</strong>, which has much more detail than I could fit into twenty minutes, including the <strong>case studies</strong> and the <strong>design rationale</strong>. There’s an <strong>open-access preprint</strong> if you hit a paywall.</p>
+<p>On <strong>installing the packages</strong>: everything is on our <strong>R-universe</strong>, which you can use as a repository directly, so <code>install.packages()</code> works exactly as you’d expect. We’re <strong>in the process of getting the packages onto CRAN</strong>, but for now <strong>R-universe is the place to get them</strong>, and it always has the <strong>latest development versions</strong>.</p>
+<p>If you’d like to get involved, we have a <strong>newsletter</strong>, <strong>monthly community meetings</strong> and <strong>bi-weekly dev meetings</strong>.</p>
 <p>I’m happy to chat about anything hubverse!</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1707,7 +2646,7 @@ model_id: string</code></pre>
       }
     });
     </script>
-    <script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","loop":false,"descPosition":"bottom","closeEffect":"zoom"});
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom","selector":".lightbox"});
     (function() {
       let previousOnload = window.onload;
       window.onload = () => {
