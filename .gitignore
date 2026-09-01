@@ -4,3 +4,6 @@
 .Ruserdata
 
 /.quarto/
+
+# Zenodo submission artefact, not part of the deck
+links.txt
