@@ -1184,6 +1184,8 @@ None of these are projects ours. They exist because the data and the format are 
 -   {{< fa brands github >}} [`hubverse-org`](https://github.com/hubverse-org)
 -   {{< fa cube >}} **Install the packages:** <https://hubverse-org.r-universe.dev>
 -   {{< fa envelope >}} [info\@r-rse.eu](mailto:info@r-rse.eu)
+
+![The hubverse team](assets/images/team.jpg){fig-alt="Group photo of eleven members of the hubverse team standing on the steps of a building" width="100%"}
 :::
 
 ::: {.column width="45%"}
