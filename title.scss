@@ -62,6 +62,18 @@ $presentation-author-block-padding-right: if(
       margin-top: 0.2em;
       font-weight: bold;
     }
+    .slide-link {
+      display: block;
+      margin-top: 0.2em;
+      text-decoration: none;
+
+      .title-qr {
+        display: block;
+        width: 10%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
     .subtitle {
       color: var(--hubverse-secondary);
       margin-top: 0.7em;

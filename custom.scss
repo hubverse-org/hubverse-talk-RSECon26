@@ -188,6 +188,17 @@ $code-block-bg: darken($body-bg, 4%);
     }
   }
 
+  // Mirrors the footer pr-comment appends when a revision is set: it is what
+  // ties a comment to one commit, so re-running edits it and a new push adds a
+  // fresh one.
+  .hv-ghc-foot {
+    margin-top: 0.6em;
+    padding-top: 0.5em;
+    border-top: 1px solid #d8dee4;
+    font-size: 0.85em;
+    color: #59636e;
+  }
+
   pre.hv-ghc-log {
     background: #f6f8fa;
     border: 1px solid #d8dee4;
@@ -272,10 +283,22 @@ $code-block-bg: darken($body-bg, 4%);
 
 // Walk-through highlight for the model output table: background only, so the
 // task ID / output type / value column colours survive the highlight.
+//
+// Each highlighted group spans several lines. Note that an inline box is painted
+// once per line, so a background wider than the line gap lands on top of the
+// neighbouring rows. One inline-block per group is painted once instead, sized
+// to the group's widest line. The negative margins let the padding widen the
+// band without shifting the text, which would break the column alignment.
+.reveal pre.hv-mo .hv-hl {
+  display: inline-block;
+  vertical-align: top;
+  padding: 2px 6px;
+  margin: 0 -6px;
+  border-radius: 6px;
+}
+
 .reveal pre.hv-mo .hv-hl.current-fragment {
   background: #fdf3d0;
-  box-shadow: 0 0 0 2px #fdf3d0;
-  border-radius: 2px;
 }
 
 // Separator between a slide's lead-in text and a full-width data block.

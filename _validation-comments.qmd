@@ -27,6 +27,7 @@
   type ID combinations all present.
 <span class="more">… 18 further checks</span></pre>
     </details>
+    <div class="hv-ghc-foot">Results for commit <code>a1b2c3d</code></div>
   </div>
 </div>
 ```
@@ -59,6 +60,7 @@
 <span class="ok">✔ [value_col_non_desc]</span>: Quantile or cdf values
   increase when ordered by `output_type_id`.
 <span class="more">… 21 further checks</span></pre>
+    <div class="hv-ghc-foot">Results for commit <code>a1b2c3d</code></div>
   </div>
 </div>
 ```
