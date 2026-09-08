@@ -7,7 +7,7 @@
 
 This repository contains the Quarto presentation slides and materials for the hubverse talk at RSECon26, the Society of Research Software Engineering conference.
 
-The talk is a 30 minute slot: aim for ~23 minutes of delivery plus questions.
+The talk is a 30 minute slot: aim for ~26 minutes of delivery plus questions.
 
 ## Abstract
 
@@ -31,9 +31,9 @@ This talk introduces the hubverse through real-world examples, including its rec
 
 Two ordering rules the deck follows. FluSight is introduced *before* the config deep dive, so every config file, data row and screenshot from that point on comes from one real hub the audience has already met. And no tool or concept is shown working on FluSight before it has been described — which is why "Beyond the data standard" sits ahead of the FluSight walkthrough, not after it. The roles diagram closes that section as a deliberate bookend to the architecture figure in "Anatomy of a hub": the same system, redrawn by person instead of by data flow.
 
-That totals ~25 min, so **plan to cut ~2 min**. The safest cuts, in order: **`dashboard — model evaluations`** (the forecasts slide already makes the dashboard point) and **`where model output lives`**, which is deliberately a 20-second beat and so is cheap to drop entirely. The "who's using it" notes are longer than you can deliver — pick three or four hubs and the local-hub point, and drop the rest.
+That totals ~25 min, which fits. If the room runs late, the safest cuts, in order: **`dashboard — model evaluations`** (the forecasts slide already makes the dashboard point) and **`where model output lives`**, which is deliberately a 20-second beat and so is cheap to drop entirely. The "who's using it" notes are longer than you can deliver — pick three or four hubs and the local-hub point, and drop the rest.
 
-Speaker notes across the deck run to roughly 5,000 words, which is more than 23 minutes of speech. They are prompts rather than a script, and several slides are images you talk over briefly.
+Speaker notes across the deck run to roughly 3,650 words, about 26 minutes at a measured pace and 24 at a brisk one. They are prompts rather than a script, and several slides are images you talk over briefly.
 
 ## Source files
 
