@@ -7,3 +7,6 @@
 
 # Zenodo submission artefact, not part of the deck
 links.txt
+
+# Speaker notes tooling and its output, local only
+/notes-tooling/
