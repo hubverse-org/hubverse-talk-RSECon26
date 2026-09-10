@@ -146,7 +146,7 @@ This talk is archived on Zenodo:
 Krystalli, A. (2026). The Hubverse: Streamlining Collaborative 
 Infectious Disease Modeling for Public Health Impact. Research Software 
 Engineering Conference 2026 (RSECon26). Zenodo. 
-https://doi.org/10.5281/zenodo.22655836
+https://doi.org/10.5281/zenodo.22685754
 ```
 
 The previous version of this talk, given at US-RSE'25, is archived on Zenodo:
