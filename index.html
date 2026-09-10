@@ -512,13 +512,13 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <aside class="notes">
 <p><strong>This is where</strong> the idea of <strong>modeling hubs</strong> came in, to help coordinate collaborative forecasting.</p>
 <ul>
-<li><p>First, Hubs <strong>bring structure</strong> and a <strong>central location</strong> for collecting model outputs.</p></li>
+<li><p>First, hubs <strong>bring structure</strong> and a <strong>central location</strong> for collecting model outputs.</p></li>
 <li><p>They <strong>establish a shared modeling protocol</strong> and data standard.</p></li>
 <li><p>By enforcing <strong>standards</strong> and <strong>submission rules</strong>, hubs ensure that <strong>forecasts can be compared.</strong></p></li>
 <li><p>and also <strong>integrated into ensemble models</strong>.</p></li>
 <li><p>Finally, hubs make it easier for:</p>
 <ul>
-<li>decision makers to <strong>set the forecasting task</strong> and</li>
+<li>decision-makers to <strong>set the forecasting task</strong> and</li>
 <li>stakeholders to <strong>access timely, relevant forecasts</strong>.</li>
 </ul></li>
 </ul>
@@ -558,7 +558,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <p>• First the <strong>US CDC COVID-19 Forecast Hub</strong></p>
 <p>• Then interest grew to <strong>scenario modeling hubs</strong>, as well as <strong>internationally</strong>.</p>
 <p><strong>‼ The problem was</strong>, each new hub <strong>required forking and manual changes to the source code</strong>, obviously not ideal.</p>
-<p>When the dust settled, effort was <strong>initiated to develop</strong> a more <strong>configurable</strong>, <strong>generalized</strong> and <strong>modular SYSTEM</strong> to support <strong>new infectious disease modeling hubs.</strong></p>
+<p>When the dust settled, effort was <strong>initiated to develop</strong> a more <strong>configurable</strong>, <strong>generalized</strong> and <strong>modular system</strong> to support <strong>new hubs.</strong></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -591,7 +591,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <li>designed <strong>to support the full lifecycle of infectious disease modeling hubs</strong>.</li>
 </ul>
 <p>It <strong>brings together:</strong></p>
-<p>• A Centralised <strong>version controlled location</strong> for hub activities through GitHub repositories</p>
+<p>• A centralised <strong>version-controlled location</strong> for hub activities through GitHub repositories</p>
 <p>• <strong>Standards</strong> for infectious disease modeling data.</p>
 <p>• <strong>Schema-driven configuration</strong>, for defining a hub’s modeling tasks, submission schedule, and other expectations.</p>
 <p>• A <strong>suite of tools</strong> for hub <strong>administration</strong>, <strong>data validation</strong>, <strong>access</strong>, <strong>evaluation</strong>, <strong>ensembling, visualisation</strong> and <strong>communication</strong>.</p>
@@ -653,7 +653,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <ul>
 <li>submit model outputs</li>
 <li>of any type of model they want</li>
-<li>as long as it matches hub requirements.</li>
+<li>as long as they match hub requirements.</li>
 </ul>
 <p>To confirm this, each submission is <strong>validated against the config</strong>. If it passes, it’s <strong>merged</strong>.</p>
 <p>… and downstream activities like building <strong>ensembles</strong>, <strong>visualising</strong>, and <strong>evaluating</strong> model outputs follow.</p>
@@ -726,7 +726,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <section id="meet-the-hub-cdc-flusight" class="title-slide slide level1 inverse center" data-background-color="black">
 <h1>🦠 Meet the hub: CDC FluSight</h1>
 <aside class="notes">
-<p><strong>To make the things I’m going to talk about concrete</strong>, let me introduce <strong>a real hub</strong>: The CDC Flusight hub</p>
+<p><strong>To make the things I’m going to talk about concrete</strong>, let me introduce <strong>a real hub</strong>: the CDC FluSight hub</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -744,7 +744,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <p><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/cdcepi/FluSight-forecast-hub" class="uri"><strong>https://github.com/cdcepi/FluSight-forecast-hub</strong></a></p>
 <div class="columns">
 <div class="column" style="width:70%;">
-<p><a href="assets/images/flusight-hub.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/images/flusight-hub.png" style="width:92.0%" alt="Screenshot of CDC Flusight Hub Github repo"></a></p>
+<p><a href="assets/images/flusight-hub.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="assets/images/flusight-hub.png" style="width:92.0%" alt="Screenshot of the CDC FluSight hub GitHub repository"></a></p>
 </div><div class="column smaller" style="width:30%;">
 <ul>
 <li>Used by US CDC to <strong>monitor influenza severity</strong></li>
@@ -765,7 +765,6 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <li>from about <strong>30 teams</strong>, <strong>every week</strong>.</li>
 </ul>
 <p>The hub is <strong>fully managed</strong> using the hubverse since the <strong>2023/24 season</strong>. Cumulatively, <strong>95 models</strong> from <strong>47 teams</strong> have submitted across <strong>88 rounds</strong> since then.</p>
-<p>Here’s a look at hub structure with all the standard directories.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -784,7 +783,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <p><a href="assets/images/flusight-model-output-folder.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="assets/images/flusight-model-output-folder.png" style="width:80.0%" alt="Screenshot of the FluSight hub model-output directory on GitHub, showing one folder per model and weekly files named by round ID and model ID"></a></p>
 
 <aside class="notes">
-<p><strong>While we’re here, let’s dig into the <code>model-output</code> directory</strong>, we see:</p>
+<p><strong>While we’re here, let’s dig into the <code>model-output</code> directory</strong>. We see:</p>
 <ol type="1">
 <li><p><strong>one directory per model</strong>.</p></li>
 <li><p><strong>one file per round</strong> inside that directory.</p></li>
@@ -898,9 +897,9 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <aside class="notes">
 <p><strong>Let’s look at</strong> the FluSight <code>admin.json</code>.</p>
 <p>First, we have <code>schema_version</code> which pins the config to a specific schema version, v6 here.</p>
-<p>Then <strong>typical administrative metadata</strong> like Hub name, maintainer, etc.</p>
+<p>Then <strong>typical administrative metadata</strong> like hub name, maintainer, etc.</p>
 <p>Then <em>where</em> the hub lives.</p>
-<p>followed by <em>operational settings</em> like what <code>file_format</code>s are allowed and the <code>timezone</code> submission deadlines are gated relative to.</p>
+<p>Followed by <em>operational settings</em> like what <code>file_format</code>s are allowed and the <code>timezone</code> submission deadlines are gated relative to.</p>
 <p>Finally <strong><code>cloud</code></strong> allows admins to define <strong>whether</strong> and <strong>where</strong> a <strong>cloud mirror</strong> of hub data <strong>exists</strong>. More on that shortly.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -950,8 +949,8 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <p>Each task is configured with <strong>three blocks</strong>.</p>
 <ul>
 <li><code>task_ids</code> define the dimensions of what’s predicted.</li>
-<li><code>output_type</code> the form the prediction takes.</li>
-<li>And <code>target_metadata</code> hold additional information about modeling targets.</li>
+<li><code>output_type</code> is the form the prediction takes.</li>
+<li>And <code>target_metadata</code> holds additional information about modeling targets.</li>
 </ul>
 <p>Because a round can <strong>hold several model tasks</strong>, a hub can <strong>ask for quite different predictions at the same time</strong>.</p>
 <p>FluSight asks for both:</p>
@@ -1072,7 +1071,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <aside class="notes">
 <p><strong>Let’s have a look at metadata collected</strong> at the target level:</p>
 <p><strong>Some are descriptive.</strong> A human readable name, a fuller description. Useful for <strong>people</strong>, and for <strong>labelling an axis</strong> on a visualisation.</p>
-<p>It also <strong>carries quantitative properties</strong>. The <strong>units</strong>. Whether it’s a <strong>step ahead</strong> forecast, in what <strong>time unit</strong>.</p>
+<p>It also <strong>carries quantitative properties</strong>. The <strong>units</strong>. Whether it’s a <strong>step-ahead</strong> forecast, in what <strong>time unit</strong>.</p>
 <p>Also the <strong>target’s statistical type</strong>.</p>
 <p>And this is <strong>intimately linked</strong> to the <strong>last important tasks config block</strong>. Output type.</p>
 <p>So let’s take a look.</p>
@@ -1245,14 +1244,13 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <aside class="notes">
 <p><strong>An output type is</strong> the form a prediction takes. The hubverse currently supports six.</p>
 <ul>
-<li><p>We <strong>accept standard point estimates</strong>, <code>mean</code> and <code>median</code>. so one number per prediction.</p></li>
+<li><p>We <strong>accept standard point estimates</strong>, <code>mean</code> and <code>median</code>. So one number per prediction.</p></li>
 <li><p>The <strong>most common output type</strong> hubs collect, though, <strong>is <code>quantile</code></strong>. The hub <strong>defines the probability levels</strong> it wants, and <strong>teams submit the predicted value</strong> at each one.</p></li>
 <li><p><strong><code>cdf</code> is the reverse</strong>. For <strong>each value the hub defines, teams submit the probability of landing</strong> at or below it. Useful when the <strong>question is about a threshold</strong>.</p></li>
 <li><p><strong><code>pmf</code> is for categorical targets</strong>. A probability on each category, summing to one.</p></li>
 <li><p><strong><code>sample</code> is a collection of draws</strong> from the predictive distribution.</p></li>
 </ul>
-<p>Hubs can also ask for samples drawn from a <strong>joint distribution</strong>, which means <strong>values for several task ID combinations drawn together</strong>, as a coherent set. Trajectories are a common example: a <strong>single draw across all horizons</strong> at once.</p>
-<p>The table below describes all six, and what <code>output_type_id</code> means for each. That <strong>shifting meaning</strong> is what lets <strong>very different predictions live in one format</strong>.</p>
+<p>Hubs can also ask for samples drawn from a <strong>joint distribution</strong>. Trajectories are a common example: a <strong>single draw across all horizons</strong> at once.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1289,12 +1287,12 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <span id="cb6-18"><a href=""></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <aside class="notes">
-<p><strong>So that’s what output types are.</strong> Here’s how a hub actually configure them.</p>
+<p><strong>So that’s what output types are.</strong> Here’s how a hub actually configures them.</p>
 <p>Within an output type, <strong><code>output_type_id.required</code> is where a hub configures which output type IDs it wants submitted</strong>. For quantiles, that’s the probability levels.</p>
 <p>Notice <strong>there’s no optional property here</strong>. Output type IDs are all required because a <strong>partial set breaks things</strong> downstream.</p>
 <p><strong><code>is_required</code> defines whether the output type itself is required</strong> within the model task. Quantiles are required for FluSight.</p>
-<p>Finally <strong><code>value</code> constrains the predicted value</strong>. For flusight <code>Type</code> must be double with zero as minimum, so no negative counts allowed.</p>
-<p>Samples have a <strong>slightly differnt config block</strong>:</p>
+<p>Finally <strong><code>value</code> constrains the predicted value</strong>. For FluSight <code>type</code> must be double with zero as minimum, so no negative counts allowed.</p>
+<p>Samples have a <strong>slightly different config block</strong>:</p>
 <ul>
 <li><code>compound_taskid_set</code> is what <strong>declares the joint distribution</strong>. It lists the <strong>task IDs held constant within a group</strong>, so <strong>everything else</strong>, here horizon, is <strong>sampled jointly</strong>. This is how a trajectory is configured.</li>
 <li>The hub also <strong>configures the min and max number of samples required</strong>, here both are 100 so the hub expects exactly 100 samples per compound task.</li>
@@ -1342,11 +1340,11 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <li>Next we have <code>output_type</code> and <code>output_type_id</code></li>
 <li>And finally, the predicted value.</li>
 </ul>
-<p>Let’s <strong>see some flusight output types</strong>:</p>
+<p>Let’s <strong>see some FluSight output types</strong>:</p>
 <ol type="1">
 <li><p>First, the required <strong>quantile</strong> output type for the <strong>hospitalisation count target</strong>. Here you can see the <strong>output type IDs represent quantile levels</strong>.</p></li>
-<li><p>Next a <strong>single sample</strong> representing a <strong>single draw of a trajectory</strong>, for that <strong>same target</strong>. Here <strong><code>output_type_id</code> represents the sample index</strong> and the values of all task IDs stays <strong>constant apart from <code>horizon</code></strong>.</p></li>
-<li><p>Finally the <strong>pmf</strong> output type for a <strong>categorical rate-change outlook</strong> for a <strong>completely different target</strong>. Here <strong>output type IDs are categories</strong> and values are <strong>propabilities that sum to one across individual predictions</strong>.</p></li>
+<li><p>Next a <strong>single sample</strong> representing a <strong>single draw of a trajectory</strong>, for that <strong>same target</strong>. Here <strong><code>output_type_id</code> represents the sample index</strong> and the values of all task IDs stay <strong>constant apart from <code>horizon</code></strong>.</p></li>
+<li><p>Finally the <strong>pmf</strong> output type for a <strong>categorical rate-change outlook</strong> for a <strong>completely different target</strong>. Here <strong>output type IDs are categories</strong> and values are <strong>probabilities that sum to one across individual predictions</strong>.</p></li>
 </ol>
 <p><strong>Three very different statistical objects</strong> in the same eight columns.</p>
 <style type="text/css">
@@ -1767,7 +1765,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <li>can <strong>access insights via the dashboard</strong> (supported by the dashboard template).</li>
 <li>But if they <strong>need data</strong>, they can also <strong>download raw data directly</strong> from the cloud mirror.</li>
 </ul></li>
-<li><p>Finally underneath it all, the <strong>hubverse developers and community</strong>. we maintain a bunch of <strong>additional tools and templates</strong> to support our activities.</p></li>
+<li><p>Finally underneath it all, the <strong>hubverse developers and community</strong>. We maintain a bunch of <strong>additional tools and templates</strong> to support our activities.</p></li>
 </ol>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1942,7 +1940,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <ul>
 <li>expected columns and data types,</li>
 <li>no duplicate rows, and that</li>
-<li>file round IDs match ids in the data.</li>
+<li>file round IDs match IDs in the data.</li>
 </ul></li>
 <li>further <strong>Content checks</strong> include:
 <ul>
@@ -1953,7 +1951,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <li>Finally we also <strong>include output-type-specific ones</strong>. For example:
 <ul>
 <li>Quantile <strong>predicted values mustn’t cross</strong>.</li>
-<li><code>pmf</code> <strong>probabilities must to sum to one</strong> per task.</li>
+<li><code>pmf</code> <strong>probabilities must sum to one</strong> per task.</li>
 <li>The <strong>correct number of samples</strong> must be submitted, with a <strong>consistent compound task ID set.</strong></li>
 </ul></li>
 </ul>
@@ -1962,7 +1960,7 @@ Anna Krystalli <a href="https://orcid.org/0000-0002-2378-4915" class="quarto-tit
 <p>Admins can <strong>configure extra checks using the <code>validations.yml</code></strong> config file.</p>
 <p>They can use <strong>opt-in checks we ship</strong>, like this one, which checks <strong><code>target_end_date</code></strong> really is the <strong>correct number of <code>horizon</code> weeks</strong> after <code>reference_date</code>.</p>
 <p>Beyond that, hubs can <strong>write their own custom check functions</strong> in R and register them in the same way.</p>
-<p>Admins can use <strong><code>create_custom_check()</code> function to create a function template</strong>, with the <strong>right structure and return classes</strong>, and they only write the logic.</p>
+<p>Admins can use the <strong><code>create_custom_check()</code> function to create a function template</strong>, with the <strong>right structure and return classes</strong>, and they only write the logic.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2041,9 +2039,9 @@ model_id: string</code></pre>
 <aside class="notes">
 <p><strong>Let’s talk about accessing data</strong> now.</p>
 <p>We’ve designed the format so that, <strong>while teams look after their own submission files</strong>, model outputs can be <strong>accessed as a whole</strong> as a <strong>queryable Arrow dataset</strong>.</p>
-<p>Here we <strong>connect to the FluSight hub’s S3 mirror</strong> with <code>hubData</code>. At this point we can <strong>interogate the hub’s schema</strong>.</p>
+<p>Here we <strong>connect to the FluSight hub’s S3 mirror</strong> with <code>hubData</code>. At this point we can <strong>interrogate the hub’s schema</strong>.</p>
 <p>We can then <strong>filter and collect data using standard <code>dplyr</code> verbs</strong>.</p>
-<p>In this example we filter for model output from a <strong>single model</strong> for a <strong>specific target end date</strong> before collecting data into our local R sesssion.</p>
+<p>In this example we filter for model output from a <strong>single model</strong> for a <strong>specific target end date</strong> before collecting data into our local R session.</p>
 <p>Note that the <strong>same functionality is available in Python</strong> via <code>hubdata</code> and both can also be used to <strong>access data from a local clone</strong>.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2095,7 +2093,7 @@ model_id: string</code></pre>
 <aside class="notes">
 <p><strong>Next ensembling.</strong></p>
 <p><strong>Ensembling is central to the hub idea</strong>: combining <strong>multiple model predictions</strong> usually gives <strong>more robust forecasts</strong> than any single model.</p>
-<p>package <code>hubEnsembles</code> provides a <strong>simple interface</strong> for building ensembles from <strong>hubverse-formatted data</strong>.</p>
+<p>The package <code>hubEnsembles</code> provides a <strong>simple interface</strong> for building ensembles from <strong>hubverse-formatted data</strong>.</p>
 <p>In this example we’ve:</p>
 <ul>
 <li>downloaded <strong>quantile</strong> model output data from <strong>3 models</strong>.</li>
@@ -2117,10 +2115,10 @@ model_id: string</code></pre>
 <h2>📈 Dashboard - <a href="https://reichlab.io/flusight-dashboard/forecast.html?as_of=2026-05-30&amp;interval=95%25&amp;target_var=wk+inc+flu+hosp&amp;xaxis_range=2024-09-01&amp;xaxis_range=2026-07-01&amp;yaxis_range=-3787.6522689994536&amp;yaxis_range=57169.8764352105&amp;model=FluSight-ensemble&amp;model=FluSight-baseline&amp;location=US">forecasts</a></h2>
 <p><a href="assets/images/dashboard-forecasts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img data-src="assets/images/dashboard-forecasts.png" style="width:85.0%" alt="Screenshot of the FluSight dashboard forecast page: controls for outcome, location, interval and model selection on the left, and a time series of incident influenza hospitalizations in the United States with a forecast fan at the right hand end"></a></p>
 <aside class="notes">
-<p><strong>The last feature I’d like to demo</strong> are our dashboards:</p>
+<p><strong>The last feature I’d like to demo</strong> is our dashboards:</p>
 <p>This is the <strong>FluSight dashboard, forecast page</strong>.</p>
 <p>It lets users <strong>explore predictions interactively</strong>: - different <strong>outcomes</strong>, - <strong>forecast dates</strong>, - <strong>models</strong> can be compared side by side, - and against <strong>observed data</strong>.</p>
-<p>You can also get <strong>more info on individual models</strong> by <strong>Clicking a model name</strong> which <strong>opens its hub model metadata</strong> file.</p>
+<p>You can also get <strong>more info on individual models</strong> by <strong>clicking a model name</strong> which <strong>opens its hub model metadata</strong> file.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2149,9 +2147,9 @@ model_id: string</code></pre>
 </div>
 <aside class="notes">
 <p><strong>Dashboards also support</strong> an <strong>evaluation tab</strong>, which enables the <strong>comparison of model performance</strong> using <strong>standard metrics</strong>.</p>
-<p>It’s powered by the <strong><code>hubEvals</code></strong> packages, which scores model output against the <strong>target data</strong> stored in the hub.</p>
+<p>It’s powered by the <strong><code>hubEvals</code></strong> package, which scores model output against the <strong>target data</strong> stored in the hub.</p>
 <p>It supports scoring rules such as: - <strong>WIS</strong> (Weighted Interval Score), - <strong>MAE</strong>, and - <strong>coverage</strong> of the 50% and 95% prediction intervals.</p>
-<p>Each is also available <strong>relative to the baseline model</strong>, and <strong>on trasformed scales</strong>.</p>
+<p>Each is also available <strong>relative to the baseline model</strong>, and <strong>on transformed scales</strong>.</p>
 <p>Every metric has a <strong>definition in the sidebar</strong>, so it’s interpretable by someone who isn’t a forecasting specialist.</p>
 <p><em>(switch tab)</em> The <strong>same scores</strong> can be viewed as a <strong>plot</strong> rather than a table.</p>
 <p>This is a <strong>heatmap of relative WIS</strong>, <strong>disaggregated by location</strong>, so you can see at a glance not just <strong>which models did well overall</strong>, but <strong>where</strong> they did better.</p>
@@ -2281,7 +2279,7 @@ model_id: string</code></pre>
 <li><p><strong>RespiLens</strong>, out of ACCIDDA at UNC, a <strong>visualisation web app for exploring US respiratory forecasts</strong>, aimed at state health departments and the public. They <strong>rely on the hubverse to standardise and consolidate the forecast data</strong>.</p></li>
 </ul>
 <p>And the <strong>MicroHub workshop</strong>, from Northern Arizona University, gets <strong>public health teams forecasting on their own surveillance data</strong> without touching model code, and the <strong>outputs land in hub format, in a hub they build on GitHub</strong>.</p>
-<p>None of these are projects ours. They exist because the <strong>data and the format are open</strong>.</p>
+<p>None of these are our projects. They exist because the <strong>data and the format are open</strong>.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2799,7 +2797,7 @@ model_id: string</code></pre>
       }
     });
     </script>
-    <script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom"});
+    <script>var lightboxQuarto = GLightbox({"loop":false,"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","descPosition":"bottom"});
     (function() {
       let previousOnload = window.onload;
       window.onload = () => {
